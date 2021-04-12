@@ -55,11 +55,11 @@ const features = [
     ),
   },
   {
-    title: 'Zero Knowledge Proofs',
-    emoji: '❓',
+    title: 'Zero-knowledge Proofs',
+    emoji: '🤐',
     description: (
       <>
-        The stuff that powers Zcash, tornado.cash, and Dark Forest!
+        Proving you know a value without revealing it -- the tech behind Zcash, tornado.cash, and Dark Forest!
       </>
     ),
   },
@@ -85,8 +85,7 @@ export default function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Ethereum learning resources">
       <header className={clsx('hero hero--primary', styles.heroBanner)} style={{backgroundImage: `url('img/hero.png')`}}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>

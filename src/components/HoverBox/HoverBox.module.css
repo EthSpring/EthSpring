@@ -8,11 +8,13 @@
   text-align: center;
   cursor: pointer;
   background-color: white;
+  width: 100%;
 }
 
 @media only screen and (min-width: 992px) {
   .HoverBox {
     flex: 0 0 25%;
+    width: auto;
   }
 }
 
