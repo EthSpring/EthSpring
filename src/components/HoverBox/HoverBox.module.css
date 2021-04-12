@@ -10,6 +10,12 @@
   background-color: white;
 }
 
+@media only screen and (min-width: 992px) {
+  .HoverBox {
+    flex: 0 0 25%;
+  }
+}
+
 .HoverBox:hover {
   transform: scale(1.02);
   transform: translateY(-3px);

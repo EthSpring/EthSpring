@@ -109,7 +109,7 @@ export default function Home() {
             <div className={styles.featuresContainer}>
               <div className={styles.featuresRow}>
                 {features.map((props, idx) => (
-                  <HoverBox key={idx} style={{flex: '0 0 25%'}} {...props} />
+                  <HoverBox key={idx} {...props} />
                 ))}
               </div>
             </div>
