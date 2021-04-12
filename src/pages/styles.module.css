@@ -6,10 +6,19 @@
  */
 
 .heroBanner {
-  padding: 4rem 0;
+  padding: 10rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+
+  /* Parallax */
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Shading */
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6);
+
 }
 
 @media screen and (max-width: 966px) {
@@ -25,13 +34,23 @@
 }
 
 .features {
-  display: flex;
   align-items: center;
   padding: 2rem 0;
   width: 100%;
+  background-color: #fdfdff;
+}
+
+.featuresContainer {
+  display: flex;
 }
 
 .featureImage {
   height: 200px;
   width: 200px;
+}
+
+.featuresRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }

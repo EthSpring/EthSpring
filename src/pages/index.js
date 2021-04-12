@@ -4,36 +4,61 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import HoverBox from '../components/HoverBox/HoverBox';
 import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: 'Crypto Philosophy',
+    emoji: '🧠',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Why we want decentralized systems, blockchain governance, and more.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: 'Peer Protocols',
+    emoji: '📡',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Readings on traditional peer protocols, blockchains, and related quests.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: 'Protocol Theory',
+    emoji: '📜',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        The math and theory behind consensus protocols, distributed systems, and blockchains.
+      </>
+    ),
+  },
+  {
+    title: 'Development',
+    emoji: '👩‍💻',
+    description: (
+      <>
+        How to build decentralized apps (dapps) on the Ethereum blockchain.
+      </>
+    ),
+  },
+  {
+    title: 'Applications',
+    emoji: '🚀',
+    description: (
+      <>
+        Learn about the hottest ETH applications, including NFTs, ERC20, and decentralized finance.
+      </>
+    ),
+  },
+  {
+    title: 'Zero Knowledge Proofs',
+    emoji: '❓',
+    description: (
+      <>
+        The stuff that powers Zcash, tornado.cash, and Dark Forest!
       </>
     ),
   },
@@ -61,14 +86,14 @@ export default function Home() {
     <Layout
       title={`Hello from ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      <header className={clsx('hero hero--primary', styles.heroBanner)} style={{backgroundImage: `url('img/hero.png')`}}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
               className={clsx(
-                'button button--outline button--secondary button--lg',
+                'button button--secondary button--lg',
                 styles.getStarted,
               )}
               to={useBaseUrl('docs/')}>
@@ -80,10 +105,11 @@ export default function Home() {
       <main>
         {features && features.length > 0 && (
           <section className={styles.features}>
-            <div className="container">
-              <div className="row">
+            <h1 style={{padding: '0 6rem', fontSize: '3rem'}}> Tracks. </h1>
+            <div className={styles.featuresContainer}>
+              <div className={styles.featuresRow}>
                 {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
+                  <HoverBox key={idx} style={{flex: '0 0 25%'}} {...props} />
                 ))}
               </div>
             </div>
