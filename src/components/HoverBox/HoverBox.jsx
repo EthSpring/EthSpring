@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './HoverBox.module.css';
 
-export default function HoverBox({title, description, emoji, style}) {
+export default function HoverBox({title, description, emoji, url, style}) {
   return  (
-    <div className={styles.HoverBox} style={style}>
+    <a className={styles.HoverBox} style={style} href={url}>
       <div className={styles.HoverBoxEmoji}>
         {emoji || '🍆'}
       </div>
@@ -11,6 +11,6 @@ export default function HoverBox({title, description, emoji, style}) {
         {title}
       </div>
       <p className={styles.HoverBoxDescription}>{description}</p>
-    </div>
+    </a>
   )
 };

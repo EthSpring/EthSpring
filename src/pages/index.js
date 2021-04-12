@@ -12,6 +12,7 @@ const features = [
   {
     title: 'Crypto Philosophy',
     emoji: '🧠',
+    url: '/docs',
     description: (
       <>
         Why we want decentralized systems, blockchain governance, and more.
@@ -21,6 +22,7 @@ const features = [
   {
     title: 'Peer Protocols',
     emoji: '📡',
+    url: '/docs',
     description: (
       <>
         Readings on traditional peer protocols, blockchains, and related quests.
@@ -30,6 +32,7 @@ const features = [
   {
     title: 'Protocol Theory',
     emoji: '📜',
+    url: '/docs',
     description: (
       <>
         The math and theory behind consensus protocols, distributed systems, and blockchains.
@@ -39,6 +42,7 @@ const features = [
   {
     title: 'Development',
     emoji: '👩‍💻',
+    url: '/docs',
     description: (
       <>
         How to build decentralized apps (dapps) on the Ethereum blockchain.
@@ -48,6 +52,7 @@ const features = [
   {
     title: 'Applications',
     emoji: '🚀',
+    url: '/docs',
     description: (
       <>
         Learn about the hottest ETH applications, including NFTs, ERC20, and decentralized finance.
@@ -57,6 +62,7 @@ const features = [
   {
     title: 'Zero-knowledge Proofs',
     emoji: '🤐',
+    url: '/docs',
     description: (
       <>
         Proving you know a value without revealing it -- the tech behind Zcash, tornado.cash, and Dark Forest!
