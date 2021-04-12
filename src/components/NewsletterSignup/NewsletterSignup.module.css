@@ -1,0 +1,44 @@
+.NewsletterSignupBlock {
+  background: #f8fafc;
+  padding: 4rem 0px;
+}
+
+@media only screen and (min-width: 992px) {
+  .NewsletterSignupBlock {
+    background: #f8fafc;
+    padding: 4rem 210px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .NewsletterSignupBlock {
+    background: #f8fafc;
+    padding: 4rem 400px;
+  }
+}
+
+.NewsletterSignupInputContainer {
+  margin: 0 0 15px 0;
+  -webkit-flex: 1 0 100%;
+  -ms-flex: 1 0 100%;
+  flex: 1 0 100%;
+}
+
+.NewsletterSignupInput {
+  background: #ffffff;
+  font-size: 15px;
+  padding: 12px;
+  border: 1px solid #e3e3e3;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  line-height: 1.4;
+  margin: 0;
+  -webkit-transition: border-color ease-out 300ms;
+  transition: border-color ease-out 300ms;
+  color: #000;
+  border-color: #e3e3e3;
+  border-radius: 4px;
+  font-weight: 400;
+  width: 100%;
+}

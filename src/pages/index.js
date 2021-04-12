@@ -5,6 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import HoverBox from '../components/HoverBox/HoverBox';
+import NewsletterSignup from '../components/NewsletterSignup/NewsletterSignup';
 import styles from './styles.module.css';
 
 const features = [
@@ -105,7 +106,6 @@ export default function Home() {
       <main>
         {features && features.length > 0 && (
           <section className={styles.features}>
-            <h1 style={{padding: '0 6rem', fontSize: '3rem'}}> Tracks. </h1>
             <div className={styles.featuresContainer}>
               <div className={styles.featuresRow}>
                 {features.map((props, idx) => (
@@ -115,6 +115,7 @@ export default function Home() {
             </div>
           </section>
         )}
+        <NewsletterSignup />
       </main>
     </Layout>
   );
