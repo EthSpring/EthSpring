@@ -13,7 +13,7 @@ const features = [
   {
     title: 'Crypto Philosophy',
     emoji: '🧠',
-    url: '/docs',
+    url: '/docs/crypto-philosophy/0-preface',
     description: (
       <>
         Why we want decentralized systems, blockchain governance, and more.
@@ -63,7 +63,7 @@ const features = [
   {
     title: 'Zero-knowledge Proofs',
     emoji: '🤐',
-    url: '/docs',
+    url: '/docs/zero-knowledge/0-preface',
     description: (
       <>
         Proving you know a value without revealing it -- the tech behind Zcash, tornado.cash, and Dark Forest!
