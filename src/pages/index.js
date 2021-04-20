@@ -23,7 +23,7 @@ const features = [
   {
     title: 'Peer Protocols',
     emoji: '📡',
-    url: '/docs',
+    url: '/docs/peer-protocols',
     description: (
       <>
         Readings on traditional peer protocols, blockchains, and related quests.
