@@ -1,29 +1,27 @@
-import React from 'react';
-import clsx from 'clsx';
-import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import HoverBox from '../components/HoverBox/HoverBox';
-import NewsletterSignup from '../components/NewsletterSignup/NewsletterSignup';
-import CallToAction from '../components/CallToAction/CallToAction';
-import styles from './styles.module.css';
+import React from "react";
+import clsx from "clsx";
+import Layout from "@theme/Layout";
+import Link from "@docusaurus/Link";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import HoverBox from "../components/HoverBox/HoverBox";
+import NewsletterSignup from "../components/NewsletterSignup/NewsletterSignup";
+import CallToAction from "../components/CallToAction/CallToAction";
+import styles from "./styles.module.css";
 
 const features = [
   {
-    title: 'Crypto Philosophy',
-    emoji: '🧠',
-    url: '/docs/crypto-philosophy/0-preface',
+    title: "Crypto Philosophy",
+    emoji: "🧠",
+    url: "/docs/crypto-philosophy/0-preface",
     description: (
-      <>
-        Why we want decentralized systems, blockchain governance, and more.
-      </>
+      <>Why we want decentralized systems, blockchain governance, and more.</>
     ),
   },
   {
-    title: 'Peer Protocols',
-    emoji: '📡',
-    url: '/docs/peer-protocols',
+    title: "Peer Protocols",
+    emoji: "📡",
+    url: "/docs/peer-protocols",
     description: (
       <>
         Readings on traditional peer protocols, blockchains, and related quests.
@@ -31,51 +29,52 @@ const features = [
     ),
   },
   {
-    title: 'Protocol Theory',
-    emoji: '📜',
-    url: '/docs/protocol-theory/0-preface',
+    title: "Protocol Theory",
+    emoji: "📜",
+    url: "/docs/protocol-theory/0-preface",
     description: (
       <>
-        The math and theory behind consensus protocols, distributed systems, and blockchains.
+        The math and theory behind consensus protocols, distributed systems, and
+        blockchains.
       </>
     ),
   },
   {
-    title: 'Development',
-    emoji: '👩‍💻',
-    url: '/docs',
+    title: "Development",
+    emoji: "👩‍💻",
+    url: "/docs/ethereum-development/0-preface",
+    description: (
+      <>How to build decentralized apps (dapps) on the Ethereum blockchain.</>
+    ),
+  },
+  {
+    title: "Applications",
+    emoji: "🚀",
+    url: "/docs/ethereum-applications/0-preface",
     description: (
       <>
-        How to build decentralized apps (dapps) on the Ethereum blockchain.
+        Learn about the hottest ETH applications, including NFTs, ERC20, and
+        decentralized finance.
       </>
     ),
   },
   {
-    title: 'Applications',
-    emoji: '🚀',
-    url: '/docs',
+    title: "Zero-knowledge Proofs",
+    emoji: "🤐",
+    url: "/docs/zero-knowledge/0-preface",
     description: (
       <>
-        Learn about the hottest ETH applications, including NFTs, ERC20, and decentralized finance.
-      </>
-    ),
-  },
-  {
-    title: 'Zero-knowledge Proofs',
-    emoji: '🤐',
-    url: '/docs/zero-knowledge/0-preface',
-    description: (
-      <>
-        Proving you know a value without revealing it -- the tech behind Zcash, tornado.cash, and Dark Forest!
+        Proving you know a value without revealing it -- the tech behind Zcash,
+        tornado.cash, and Dark Forest!
       </>
     ),
   },
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={clsx('col col--4', styles.feature)}>
+    <div className={clsx("col col--4", styles.feature)}>
       {imgUrl && (
         <div className="text--center">
           <img className={styles.featureImage} src={imgUrl} alt={title} />
@@ -89,11 +88,13 @@ function Feature({imageUrl, title, description}) {
 
 export default function Home() {
   const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+  const { siteConfig = {} } = context;
   return (
-    <Layout
-      description="Ethereum learning resources">
-      <header className={clsx('hero hero--primary', styles.heroBanner)} style={{backgroundImage: `url('img/hero.png')`}}>
+    <Layout description="Ethereum learning resources">
+      <header
+        className={clsx("hero hero--primary", styles.heroBanner)}
+        style={{ backgroundImage: `url('img/hero.png')` }}
+      >
         <div className={`container ${styles.topContainer}`}>
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>

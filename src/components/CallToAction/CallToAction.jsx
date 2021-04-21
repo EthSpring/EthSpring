@@ -1,3 +1,4 @@
+import Link from "@docusaurus/Link";
 import React from "react";
 import styles from "./CallToAction.module.css";
 
@@ -6,13 +7,18 @@ export default function CallToAction() {
     <>
       <div className={styles.Container}>
         <div className={styles.Box}>
-          <div style={{fontSize: '3rem'}}>📖</div>
+          <div style={{ fontSize: "3rem" }}>📖</div>
           <h2>
             <span>Intro to ETH</span>
           </h2>
           <div>
             <div>
-              <button class="button button--primary button--lg">Get Started</button>
+              <Link
+                className="button button--primary button--lg"
+                to="/docs/introduction/1-introduction/1-ethereum-101"
+              >
+                Get Started
+              </Link>
             </div>
           </div>
         </div>
