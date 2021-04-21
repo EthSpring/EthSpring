@@ -33,7 +33,7 @@ const features = [
   {
     title: 'Protocol Theory',
     emoji: '📜',
-    url: '/docs',
+    url: '/docs/protocol-theory/0-preface',
     description: (
       <>
         The math and theory behind consensus protocols, distributed systems, and blockchains.

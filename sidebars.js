@@ -12,6 +12,11 @@ module.exports = {
     },
     {
       type: 'category',
+      label: 'Protocol Theory',
+      items: ['protocol-theory/0-preface','protocol-theory/1-distributed-systems', 'protocol-theory/2-consensus-protocols', 'protocol-theory/3-additional-readings', 'protocol-theory/4-problems']
+    },
+    {
+      type: 'category',
       label: 'Zero Knowledge Cryptography',
       items: ['zero-knowledge/0-preface', 'zero-knowledge/1-intro-to-zkps', 'zero-knowledge/2-zkp-theory', 'zero-knowledge/3-zksnark-theory', 'zero-knowledge/4-mpc', 'zero-knowledge/5-zk-apps', 'zero-knowledge/6-zk-dev']
     }
