@@ -61,11 +61,6 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Peer Protocols",
-      items: ["peer-protocols"],
-    },
-    {
-      type: "category",
       label: "Protocol Theory",
       items: [
         "protocol-theory/0-preface",
@@ -73,6 +68,23 @@ module.exports = {
         "protocol-theory/2-consensus-protocols",
         "protocol-theory/3-additional-readings",
         "protocol-theory/4-problems",
+      ],
+    },
+    {
+      type: "category",
+      label: "Peer Protocols",
+      items: ["peer-protocols"],
+    },
+    {
+      type: "category",
+      label: "Ethereum Development",
+      items: [
+        "ethereum-development/0-preface",
+        "ethereum-development/1-intro-smart-contracts",
+        "ethereum-development/2-smart-contract-languages",
+        "ethereum-development/3-smart-contract-development",
+        "ethereum-development/4-smart-contract-security",
+        "ethereum-development/5-quests",
       ],
     },
     {
