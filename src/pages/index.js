@@ -15,7 +15,7 @@ const features = [
     emoji: "🧠",
     url: "/docs/crypto-philosophy/0-preface",
     description: (
-      <>Why we want decentralized systems, blockchain governance, and more.</>
+      <>The "why" behind blockchains, decentralized systems, and more.</>
     ),
   },
   {
@@ -64,7 +64,7 @@ const features = [
     url: "/docs/zero-knowledge/0-preface",
     description: (
       <>
-        Proving you know a value without revealing it -- the tech behind Zcash,
+        A powerful new cryptographic technique that allows you to verify computation on hidden inputs -- the tech behind Zcash,
         tornado.cash, and Dark Forest!
       </>
     ),
