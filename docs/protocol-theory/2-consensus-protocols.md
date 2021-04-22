@@ -31,9 +31,9 @@ The key is to understand where the differences lie in the mechanisms:
 ## Proof of Work (PoW)
 Proof of Work requires "miners" in the network to use computational power in order to post blocks of transactions, if a "miners" block gets accepted into the chain, they are rewarded some amount of coin. The following article explains this in more detail, along with an explanation of how it's implemented in Ethereum.
 
-[Proof of Work]([https://ethereum.org/en/developers/docs/consensus-mechanisms/pow/](https://ethereum.org/en/developers/docs/consensus-mechanisms/pow/))
+[Proof of Work](https://ethereum.org/en/developers/docs/consensus-mechanisms/pow/)
 
 ## Proof of Stake (PoS)
 Proof of Stake operates by requiring nodes to wager some amount of coin for any block they publish. Similar to PoW, they are rewarded for blocks they publish, but their wagered coins can be lost if they behave maliciously. PoS has a lot of benefits, which is why Ethereum is currently in the process of switching to a PoS based protocol. We'll have more technical readings soon explaining the more recent changes, but if you haven't already, read [Vitalik's blog post](https://vitalik.ca/general/2016/12/29/pos_design.html) from Crypto Philosophy on Proof of Stake for a conceptual explanation.
 
-[Proof of Stake]([https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/](https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/))
+[Proof of Stake](https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/)
