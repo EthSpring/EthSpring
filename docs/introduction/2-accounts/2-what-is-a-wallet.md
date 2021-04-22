@@ -1,5 +1,5 @@
 ---
-title: "What is a wallet?"
+title: "2.2 What is a wallet?"
 id: 2-what-is-a-wallet
 ---
 

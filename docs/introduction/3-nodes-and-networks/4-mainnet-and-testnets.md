@@ -1,5 +1,5 @@
 ---
-title: "Mainnet and Testnets"
+title: "3.4 Mainnet and Testnets"
 id: 4-mainnet-and-testnets
 ---
 

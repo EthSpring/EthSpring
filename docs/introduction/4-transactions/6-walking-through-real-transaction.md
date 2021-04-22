@@ -1,5 +1,5 @@
 ---
-title: "Walking Through a Real Transaction"
+title: "4.6 Walking Through a Real Transaction"
 id: 6-walking-through-real-transaction
 ---
 

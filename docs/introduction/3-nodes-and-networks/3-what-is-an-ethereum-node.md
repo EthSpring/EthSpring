@@ -1,5 +1,5 @@
 ---
-title: "What is an Ethereum Node?"
+title: "3.3 What is an Ethereum Node?"
 id: 3-what-is-an-ethereum-node
 ---
 

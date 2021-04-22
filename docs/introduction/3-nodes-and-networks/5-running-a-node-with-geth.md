@@ -1,5 +1,5 @@
 ---
-title: "Running a Node with Geth"
+title: "3.5 Running a Node with Geth"
 id: 5-running-a-node-with-geth
 ---
 

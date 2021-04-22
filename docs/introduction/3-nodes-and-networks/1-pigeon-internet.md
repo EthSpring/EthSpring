@@ -1,5 +1,5 @@
 ---
-title: "Pigeon Internet"
+title: "3.1 Pigeon Internet"
 id: 1-pigeon-internet
 ---
 

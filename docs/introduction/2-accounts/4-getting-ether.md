@@ -1,5 +1,5 @@
 ---
-title: "Getting ether"
+title: "2.4 Getting ether"
 id: 4-getting-ether
 ---
 

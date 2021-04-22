@@ -1,5 +1,5 @@
 ---
-title: "Ethereum 101"
+title: "1.1 Ethereum 101"
 id: 1-ethereum-101
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "The current state of Ethereum"
+title: "1.2 The current state of Ethereum"
 id: 2-current-state-of-ethereum
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "What is an account?"
+title: "2.1 What is an account?"
 id: 1-what-is-an-account
 ---
 

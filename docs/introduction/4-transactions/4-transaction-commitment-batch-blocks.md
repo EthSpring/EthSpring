@@ -1,5 +1,5 @@
 ---
-title: "Transactions and blocks"
+title: "4.4 Transactions and blocks"
 id: 4-transaction-commitment-batch-blocks
 ---
 

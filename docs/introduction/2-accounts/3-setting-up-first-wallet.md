@@ -1,5 +1,5 @@
 ---
-title: "Setting up your first wallet"
+title: "2.3 Setting up your first wallet"
 id: 3-setting-up-first-wallet
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Peer-to-Peer Systems"
+title: "3.2 Peer-to-Peer Systems"
 id: 2-peer-to-peer-systems
 ---
 

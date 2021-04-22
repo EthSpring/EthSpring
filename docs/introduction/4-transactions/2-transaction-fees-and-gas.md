@@ -1,5 +1,5 @@
 ---
-title: "Transaction fees and gas"
+title: "4.2 Transaction fees and gas"
 id: 2-transaction-fees-and-gas
 ---
 

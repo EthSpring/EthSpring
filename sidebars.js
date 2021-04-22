@@ -6,7 +6,7 @@ module.exports = {
       items: [
         {
           type: "category",
-          label: "Introduction",
+          label: "1. Introduction",
           items: [
             "introduction/1-introduction/1-ethereum-101",
             "introduction/1-introduction/2-current-state-of-ethereum",
@@ -14,7 +14,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Accounts",
+          label: "2. Accounts",
           items: [
             "introduction/2-accounts/1-what-is-an-account",
             "introduction/2-accounts/2-what-is-a-wallet",
@@ -25,7 +25,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Nodes and Networks",
+          label: "3. Nodes and Networks",
           items: [
             "introduction/3-nodes-and-networks/1-pigeon-internet",
             "introduction/3-nodes-and-networks/2-peer-to-peer-systems",
@@ -36,7 +36,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Transactions",
+          label: "4. Transactions",
           items: [
             "introduction/4-transactions/1-what-is-a-transaction",
             "introduction/4-transactions/2-transaction-fees-and-gas",

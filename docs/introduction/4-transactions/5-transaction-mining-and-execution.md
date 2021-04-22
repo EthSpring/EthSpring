@@ -1,5 +1,5 @@
 ---
-title: "Transaction mining and execution"
+title: "4.5 Transaction mining and execution"
 id: 5-transaction-mining-and-execution
 ---
 

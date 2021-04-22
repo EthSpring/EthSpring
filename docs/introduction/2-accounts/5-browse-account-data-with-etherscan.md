@@ -1,5 +1,5 @@
 ---
-title: "Browse account data with Etherscan"
+title: "2.5 Browse account data with Etherscan"
 id: 5-browse-account-data-with-etherscan
 ---
 

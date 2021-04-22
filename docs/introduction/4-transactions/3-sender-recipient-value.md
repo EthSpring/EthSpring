@@ -1,5 +1,5 @@
 ---
-title: "Sender, recipient, and value"
+title: "4.3 Sender, recipient, and value"
 id: 3-sender-recipient-value
 ---
 
