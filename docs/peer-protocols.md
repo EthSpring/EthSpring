@@ -4,6 +4,8 @@ title: Reading List
 
 # Preface
 
+If you went through the last section on Protocol Theory, you'll notice that we assumed that there was an existing communication network that is able to facilitate the passing of messages across nodes. That's what we will explore here.
+
 Peer Protocols explain how nodes connect to each other, publish transactions and blocks to the blockchain, update the state of the network, and communicate information to each other.
 
 # Non-blockchain Protocol Readings

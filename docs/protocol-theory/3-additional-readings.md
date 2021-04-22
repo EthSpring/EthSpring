@@ -12,5 +12,4 @@ id: 3-additional-readings
 
 **Consensus**
 
-- [Paxos Made Simple](https://lamport.azurewebsites.net/pubs/paxos-simple.pdf)
 - [Secure High-Rate Transaction Processing in Bitcoin (GHOST)](https://eprint.iacr.org/2013/881.pdf)
