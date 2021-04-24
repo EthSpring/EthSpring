@@ -37,9 +37,7 @@ DAI. This is another stable coin similar to USDC. However, each DAI is redeemabl
 
 [UNI](https://etherscan.io/token/0x1f9840a85d5af5bf1d1762f925bdaddc4201f984). A governance token for [Uniswap](https://uniswap.org/blog/uni/). Owning this token gives you voting rights in how Uniswap spends its multibillion dollar treasury. UNI token holders also can vote to turn on a fee switch which will direct a small portion of Uniswap trading fees to the treasury. [Announcing UNI](https://uniswap.org/blog/uni/)
 
-[COMP](https://etherscan.io/token/0xc00e94cb662c3520282e6f5717214004a7f26888) ([Compound](https://compound.finance/governance/comp))
-
-[BAT](https://etherscan.io/token/0x0d8775f648430679a709e98d2b0cb6250d2887ef) ([Basic Attention Token](https://basicattentiontoken.org/))
+[MCO2](https://etherscan.io/token/0xfc98e825a2264d890f9a1e68ed50e1526abccacd). The Moss Carbon Credit is a commodity. 1 MCO2 Token = 1 carbon credit from a VCS certified environmental project (forestry, energy, biomass, etc). Practically, buying then burning an MCO2 token is offsetting your carbon emissions by 1 ton. These tokens are all minted by Moss so you're trusting that they've taken care of the legalities. [Read more](https://mco2token.moss.earth)
 
 If you want to get technical, here's the official token standard. This document describes what methods you need to implement for a valid ERC-20 token. [ERC-20 token standard](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md)
 
