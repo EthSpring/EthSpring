@@ -5,7 +5,7 @@ title: Finance and Investing
 
 DeFi (short for "decentralized finance") refers to a variety of financial applications built on blockchains. DeFi applications are smart contracts that allow participants to participate in financial actions like borrowing and lending, without needing intermediaries or trusted third-parties like a bank or broker.
 
-In week 1, we already covered Uniswap and Stablecoin.
+The key benefit to moving 99% of finance on to a blockchain is that it allows regular people to participate in the financial system in ways they can't today. For example, most people don't know what a market maker is, even if they did know, they'd have a hard time becoming one. Via Uniswap, anyone can become a market maker.
 
 [What is DeFi? Decentralized Finance Explained](https://www.youtube.com/watch?v=k9HYC0EJU6E&feature=emb_rel_pause) - Video
 
