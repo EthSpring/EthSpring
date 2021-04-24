@@ -78,14 +78,14 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/MYKatz/EthSpring/edit/master/website/',
+            'https://github.com/MYKatz/EthSpring/edit/master/',
           remarkPlugins: [math],
           rehypePlugins: [katex],
         },
         blog: {
           showReadingTime: true,
           editUrl:
-            'https://github.com/MYKatz/EthSpring/edit/master/website/blog/',
+            'https://github.com/MYKatz/EthSpring/edit/master/blog/',
         },
         theme: {
           customCss: [require.resolve('./src/css/custom.css')],
