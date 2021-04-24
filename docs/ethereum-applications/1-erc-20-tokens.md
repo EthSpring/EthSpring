@@ -5,7 +5,27 @@ title: ERC-20 Tokens
 
 ERC-20 Tokens are fungible tokens (as opposed to non fungible tokens). They are ubitious across the Ethereum ecosystem. Common use cases include as money, commodities, financial assets, governance tokens, and revenue share tokens. But really, an ERC20 token can be used for whatever it's design to be used for.
 
-Some examples of ERC-20 tokens:
+Here's an ERC20 written in psudo-python, called FreeCoin, designed to be free for anyone mint in unlimited amounts. It's not recommended to use this token as a real currency.
+
+```python
+class FreeCoin():
+    def init():
+        self.balances = {} # empty dictionary, key will be user, value will be balance
+
+    def transferTo(recipient, amount):
+        # caller is a keyword that represents who called the function
+        if self.balances[caller] > amount:
+            self.balances[caller] -= amount
+            self.balances[recipient] += amount
+
+    def balanceOf(user):
+        return self.balances[user]
+
+    def mint(amount):
+        self.balances[caller] += amount
+```
+
+## Examples of Real-life Tokens
 
 [USDC](https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48) (US Dollar Coin). Each USDC is minted by Circle (Coinbase and friends). Circle puts a real US dollar a trust, then mints a USDC. A USDC is always redeemable for $1 so it's a useful way of keeping your money in crypto, without experiencing the daily volatility of ETH. ([USDCv2: upgrading a multi-billion dollar ERC-20 token](https://blog.coinbase.com/usdc-v2-upgrading-a-multi-billion-dollar-erc-20-token-b57cd9437096))
 
@@ -23,7 +43,7 @@ DAI. This is another stable coin similar to USDC. However, each DAI is redeemabl
 
 If you want to get technical, here's the official token standard. This document describes what methods you need to implement for a valid ERC-20 token. [ERC-20 token standard](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md)
 
-### Readings
+## Readings
 
 [ERC-20 token standard](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md)
 
@@ -44,7 +64,7 @@ For checking current gas price
 
 [Solidity By Example](https://docs.soliditylang.org/en/v0.8.0/solidity-by-example.html) - Use this as a reference to learn solidity
 
-### **Quests**
+## Quests
 
 - [ ] Interact with smart contracts on [etherscan](https://etherscan.io/)
   - Get some ERC20 token, e.g. DAI (can swap your ETH for DAI on Uniswap, see 01/05 reading list);
