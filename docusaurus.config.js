@@ -5,13 +5,13 @@ const katex = require('rehype-katex');
 module.exports = {
   title: 'EthSpring',
   tagline: 'Open Ethereum Learning Resources',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://ethspring.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'MYKatz', // Usually your GitHub org/user name.
+  projectName: 'EthSpring', // Usually your repo name.
   stylesheets: [
     {
       href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css',
@@ -29,7 +29,7 @@ module.exports = {
     navbar: {
       title: 'EthSpring',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'EthSpring Logo',
         src: 'img/logo.svg',
       },
       items: [
@@ -77,17 +77,15 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/MYKatz/EthSpring/edit/master/website/',
           remarkPlugins: [math],
           rehypePlugins: [katex],
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/MYKatz/EthSpring/edit/master/website/blog/',
         },
         theme: {
           customCss: [require.resolve('./src/css/custom.css')],
