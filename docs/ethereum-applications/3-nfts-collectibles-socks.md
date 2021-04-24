@@ -6,7 +6,7 @@ title: NFTs / Collectibles / SOCKS
 A lot of people don’t understand what an NFT is. So what is an NFT, here’s some example code of an NFT written in pseudo-python.
 
 ```python
-class CoolNFT():
+class EvansFirstNFT():
     def init():
         # caller is a keyword that represents who called the function
         self.owner = caller
@@ -19,24 +19,25 @@ class CoolNFT():
         return self.owner
 
     def uri():
-        return "http://coolnft.com/metadata.json"
+        return "https://ethspring.com/nft/EvansFirstNFT.json"
 ```
 
-For most NFTs, this uri has the metadata that has information users may want about the NFT, like a link to the a piece of art or a title. This data is off-chain. An NFT could modify its code to have that data stored on chain, but the cost per byte is high so there’s a trade off to be made.
+The code above is deployed to the blockchain. Clearly though, there is a URL to some data that's off-chain on the Eth Spring servers. This metadata has important information such as the title of the NFT, description, and the artwork jpeg. An NFT could modify its code to have that data stored on chain, but the costs are higher so there’s a trade off to be made.
 
 ## Readings
 
+The first recommended reading for newbies in the NFT space is [The Anatomy of ERC721](https://medium.com/crypto-currently/the-anatomy-of-erc721-e9db77abfc24). They do a good job of explaining what "non-fungible" (the NF in NFT) means.
+
 [ERC-721 token standard](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md)
 
-[The Anatomy of ERC721](https://medium.com/crypto-currently/the-anatomy-of-erc721-e9db77abfc24)
 
 [ERC-721 tutorial on ethereum.org with Web3.py example](https://ethereum.org/en/developers/docs/standards/tokens/erc-721/)
 
 [CryptoKitties ERC-721 implementation](https://github.com/dapperlabs/cryptokitties-bounty/blob/master/contracts/KittyOwnership.sol)
 
-(Optional) [Learn how our last mystery smart contract works](https://www.cryptokitties.co/blog/post/learn-how-our-last-mystery-smart-contract-works/) - CryptoKitties updated their `geneScience` smart contract, see how the contract works, and try to figure out how they updated it
+[Learn how our last mystery smart contract works](https://www.cryptokitties.co/blog/post/learn-how-our-last-mystery-smart-contract-works/) - CryptoKitties updated their `geneScience` smart contract, see how the contract works, and try to figure out how they updated it
 
-(Optional) [How to breed AI the Alpacat and seven Alpacat Purrstige Traits](https://www.cryptokitties.co/blog/post/how-to-breed-al-the-alpacat) **🦙**
+[How to breed AI the Alpacat and seven Alpacat Purrstige Traits](https://www.cryptokitties.co/blog/post/how-to-breed-al-the-alpacat) **🦙**
 
 [Nifty.ink (alpha release)](https://medium.com/@austin_48503/nifty-ink-%EF%B8%8F-alpha-release-c860a4904cb2) - Austin's project, a scaffold-eth build for creating an NFT platform that scales
 
