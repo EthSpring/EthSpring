@@ -6,27 +6,7 @@
   transition: color 0.3s, transform 0.3s !important;
   text-align: center;
   background-color: white;
-  width: 80%;
   /* Remove default link styling */
   color: black !important;
   text-decoration: none !important;
-}
-
-.Container {
-  position: absolute;
-  width: 100%;
-  margin-top: -280px;
-}
-
-@media only screen and (max-width: 992px) {
-  .Container {
-    position: relative;
-    margin-top: 0;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .BottomSpacing {
-    margin-bottom: 120px;
-  }
 }

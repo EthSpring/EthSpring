@@ -4,6 +4,7 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
+import { CardContainer } from "ethereum-org-website/src/components/SharedStyledComponents";
 import HoverBox from "../components/HoverBox/HoverBox";
 import NewsletterSignup from "../components/NewsletterSignup/NewsletterSignup";
 import CallToAction from "../components/CallToAction/CallToAction";
@@ -64,8 +65,9 @@ const features = [
     url: "/docs/zero-knowledge/0-preface",
     description: (
       <>
-        A powerful new cryptographic technique that allows you to verify computation on hidden inputs -- the tech behind Zcash,
-        tornado.cash, and Dark Forest!
+        A powerful new cryptographic technique that allows you to verify
+        computation on hidden inputs -- the tech behind Zcash, tornado.cash, and
+        Dark Forest!
       </>
     ),
   },
@@ -101,18 +103,16 @@ export default function Home() {
         </div>
       </header>
       <main>
-        <CallToAction />
-        {features && features.length > 0 && (
-          <section className={styles.features}>
-            <div className={styles.featuresContainer}>
-              <div className={styles.featuresRow}>
-                {features.map((props, idx) => (
-                  <HoverBox key={idx} {...props} />
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
+        <div style={{ width: "80%", margin: "0 auto", padding: "50px" }}>
+          <CallToAction />
+          {features && features.length > 0 && (
+            <CardContainer>
+              {features.map((props, idx) => (
+                <HoverBox key={idx} {...props} />
+              ))}
+            </CardContainer>
+          )}
+        </div>
         <NewsletterSignup />
       </main>
     </Layout>

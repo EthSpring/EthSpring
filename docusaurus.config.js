@@ -1,39 +1,39 @@
-const math = require('remark-math');
-const katex = require('rehype-katex');
+const math = require("remark-math");
+const katex = require("rehype-katex");
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'EthSpring',
-  tagline: 'Open Ethereum Learning Resources',
-  url: 'https://ethspring.com',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'MYKatz', // Usually your GitHub org/user name.
-  projectName: 'EthSpring', // Usually your repo name.
+  title: "EthSpring",
+  tagline: "Open Ethereum Learning Resources",
+  url: "https://ethspring.com",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "MYKatz", // Usually your GitHub org/user name.
+  projectName: "EthSpring", // Usually your repo name.
   stylesheets: [
     {
-      href: 'https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css',
-      type: 'text/css',
+      href: "https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css",
+      type: "text/css",
       integrity:
-        'sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X',
-      crossorigin: 'anonymous',
+        "sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X",
+      crossorigin: "anonymous",
     },
   ],
   themeConfig: {
     colorMode: {
       disableSwitch: true, // disable dark mode switch
-      respectPrefersColorScheme: false
+      respectPrefersColorScheme: false,
     },
     navbar: {
-      title: 'EthSpring',
+      title: "EthSpring",
       logo: {
-        alt: 'EthSpring Logo',
-        src: 'img/logo.svg',
+        alt: "EthSpring Logo",
+        src: "img/logo.svg",
       },
       items: [
-/*         {
+        /*         {
           to: 'docs/',
           activeBasePath: 'docs',
           label: 'Docs',
@@ -42,8 +42,8 @@ module.exports = {
       ],
     },
     footer: {
-      style: 'dark',
-/*       links: [
+      style: "dark",
+      /*       links: [
         {
           title: 'Docs',
           items: [
@@ -71,24 +71,28 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()}`,
     },
   },
+  plugins: [
+    require.resolve("./plugins/docusaurus-plugin-ethereum-org-website"),
+  ],
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/MYKatz/EthSpring/edit/master/',
+          sidebarPath: require.resolve("./sidebars.js"),
+          editUrl: "https://github.com/MYKatz/EthSpring/edit/master/",
           remarkPlugins: [math],
           rehypePlugins: [katex],
         },
         blog: {
           showReadingTime: true,
-          editUrl:
-            'https://github.com/MYKatz/EthSpring/edit/master/blog/',
+          editUrl: "https://github.com/MYKatz/EthSpring/edit/master/blog/",
         },
         theme: {
-          customCss: [require.resolve('./src/css/custom.css')],
+          customCss: [
+            require.resolve("ethereum-org-website/src/styles/layout.css"),
+            require.resolve("./src/css/custom.css"),
+          ],
         },
       },
     ],

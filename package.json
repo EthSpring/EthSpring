@@ -4,20 +4,23 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
-    "build": "docusaurus build",
+    "start": "yarn prepare-ethereum-org-website && docusaurus start",
+    "build": "yarn prepare-ethereum-org-website && docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
-    "write-heading-ids": "docusaurus write-heading-ids"
+    "write-heading-ids": "docusaurus write-heading-ids",
+    "// 1": "Prepares the ethereum-org-website code so we can import components from it",
+    "prepare-ethereum-org-website": "cd node_modules/ethereum-org-website && yarn merge-translations"
   },
   "dependencies": {
     "@docusaurus/core": "2.0.0-beta.3",
     "@docusaurus/preset-classic": "2.0.0-beta.3",
     "@mdx-js/react": "^1.6.22",
     "clsx": "^1.1.1",
+    "ethereum-org-website": "https://github.com/ethereum/ethereum-org-website#v2.31.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rehype-katex": "^4.0.0",
@@ -34,5 +37,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
+    "@babel/plugin-proposal-private-methods": "^7.14.5"
   }
 }
