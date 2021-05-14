@@ -29,9 +29,9 @@ class FreeCoin():
 
 [USDC](https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48) (US Dollar Coin). Each USDC is minted by Circle (Coinbase and friends). Circle puts a real US dollar a trust, then mints a USDC. A USDC is always redeemable for $1 so it's a useful way of keeping your money in crypto, without experiencing the daily volatility of ETH. ([USDCv2: upgrading a multi-billion dollar ERC-20 token](https://blog.coinbase.com/usdc-v2-upgrading-a-multi-billion-dollar-erc-20-token-b57cd9437096))
 
-DAI. This is another stable coin similar to USDC. However, each DAI is redeemable for $1 worth of ETH. This mechanism allows DAI to always be worth $1 and is interesting to read about. One benefit of DAI over USDC is that with DAI, you don't need to trust Circle's honesty, however the caveat is that with DAI you now need to trust/verify that the smart contracts are written properly
+DAI. This is another stable coin similar to USDC. However, each DAI is redeemable for $1 worth of ETH. This mechanism allows DAI to always be worth $1 and is interesting to read about. One benefit of DAI over USDC is that with DAI, you don't need to trust Circle's honesty, however the caveat is that with DAI you now need to trust/verify that the smart contracts are written properly. [How it works video](https://www.youtube.com/watch?v=J9q8hkyy8oM) [How it works slides](https://docs.makerdao.com/maker-protocol-101)
 
-[MKR](https://etherscan.io/token/0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2) ([Maker](https://community-development.makerdao.com/en/learn/governance/mkr-token/)). In order for the DAI protocol to keep running smoothly, a governance community called Maker adjusts parameters for the DAI ecosystem. MKR holders vote on how to adjust the DAI protocol to keep the trains running.
+[MKR](https://etherscan.io/token/0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2) ([Maker](https://community-development.makerdao.com/en/learn/governance/mkr-token/)). In order for the DAI protocol to keep running smoothly, a governance community called Maker adjusts parameters for the DAI ecosystem. MKR holders vote on how to adjust the DAI protocol to keep the trains running. [Awesome MakerDAO](https://github.com/makerdao/awesome-makerdao/blob/master/README.md)
 
 [WBTC](https://etherscan.io/token/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599) ([Wrapped Bitcoin](https://wbtc.network/)). This token functions similarly to USDC, but instead of being redeemable for $1, it's redeemable for 1 Bitcoin. Since bitcoin isn't an ERC20 built on Ethereum you can't use Bitcoin in the Ethereum ecosystem. WBTC solves this!
 
@@ -72,3 +72,5 @@ For checking current gas price
   - Look at the transaction in etherscan;
   - Go to Read Contract again to verify the `balanceOf` changed for your other address.
 - [ ] Reserve an [ENS](https://ens.domains/) (Ethereum Name Service) name and link it to your Ethereum address.
+- [ ] Mint some [DAI](https://oasis.app/borrow) - There's a "see how it works" video on the website
+- [ ] (Optional) [Coinbase earn](https://www.coinbase.com/earn) - Earning MKR by watching videos
