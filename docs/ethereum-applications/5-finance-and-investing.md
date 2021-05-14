@@ -26,25 +26,32 @@ The key benefit to moving 99% of finance on to a blockchain is that it allows re
 
 [Uniswap docs](https://uniswap.org/docs/v2/protocol-overview/how-uniswap-works)
 
-- [Swaps](https://uniswap.org/docs/v2/core-concepts/swaps) ([smart contract code](https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/UniswapV2Pair.sol#L159-L183))
-- [Pools](https://uniswap.org/docs/v2/core-concepts/pools/) ([smart contract code](https://uniswap.org/docs/v2/smart-contracts/router02/#addliquidity))
-- [Flash swaps](https://uniswap.org/docs/v2/core-concepts/flash-swaps/) ([smart contract code](https://uniswap.org/docs/v2/smart-contract-integration/using-flash-swaps/))
+**How it works**
 
-(Optional) [Uniswap V2 Overview](https://uniswap.org/blog/uniswap-v2/) - What's new in v2
+[Constant Function Market Makers: DeFi's "Zero to One" Innovation](https://medium.com/bollinger-investment-group/constant-function-market-makers-defis-zero-to-one-innovation-968f77022159)
+
+[Uniswap V2 Overview](https://uniswap.org/blog/uniswap-v2/) - What's new in v2
+[Uniswap V3 Overview](https://uniswap.org/blog/uniswap-v3/) - What's new in v3
 
 [Uniswap smart contracts](https://uniswap.org/docs/v2/protocol-overview/smart-contracts/)
 
 - [Factory contract](https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/UniswapV2Factory.sol) - An example of factory contract ([create2](https://docs.openzeppelin.com/cli/2.8/deploying-with-create2))
 
+**Market Making Returns**
+
 (Optional) [A good deal for liquidity providers?](https://pintail.medium.com/uniswap-a-good-deal-for-liquidity-providers-104c0b6816f2) - Explains impermanent loss
 
 (Optional) [Understanding Uniswap Returns](https://pintail.medium.com/understanding-uniswap-returns-cc593f3499ef)
 
-(Optional) [Constant Function Market Makers: DeFi's "Zero to One" Innovation](https://medium.com/bollinger-investment-group/constant-function-market-makers-defis-zero-to-one-innovation-968f77022159)
-
 (Optional) [Introducing UNI](https://uniswap.org/blog/uni/)
 
 (Optional) [Uniswap's retroactive airdrop vote put free money on the campaign trail](https://www.coindesk.com/uniswap-dharma-retroactive-uni-airdrop-defi-governance) - about airdrop and governance
+
+**Technical Aspects**
+
+- [Swaps](https://uniswap.org/docs/v2/core-concepts/swaps) ([smart contract code](https://github.com/Uniswap/uniswap-v2-core/blob/master/contracts/UniswapV2Pair.sol#L159-L183))
+- [Pools](https://uniswap.org/docs/v2/core-concepts/pools/) ([smart contract code](https://uniswap.org/docs/v2/smart-contracts/router02/#addliquidity))
+- [Flash swaps](https://uniswap.org/docs/v2/core-concepts/flash-swaps/) ([smart contract code](https://uniswap.org/docs/v2/smart-contract-integration/using-flash-swaps/))
 
 **Quests**
 
@@ -128,7 +135,7 @@ Please go over Week 1 Topic 2 if you are not familiar with Uniswap.
 
 [The promise and potential of synthetic assets](https://blog.coinbase.com/around-the-block-8-the-promise-and-potential-of-synthetic-assets-9fbb15c2b24e)
 
-## UMA
+### UMA
 
 [UMA - Enabling Universal Market Access](https://medium.com/uma-project/uma-enabling-universal-market-access-266eb9e5fd90)
 
@@ -136,12 +143,12 @@ Please go over Week 1 Topic 2 if you are not familiar with Uniswap.
 
 [UMA's Data Verification Mechanism](https://medium.com/uma-project/umas-data-verification-mechanism-3c5342759eb8) - oracle
 
-## Synthetix
+### Synthetix
 (Optional) [What is Synthetix and how does it work?](https://www.gemini.com/cryptopedia/synthetix)
 
 (Optional) [Synthetix SNX Staking & sUSD minting tutorial](https://defirate.com/snx-staking-tutorial/)
 
-## Oracle
+### Oracle
 
 [Decentralized oracles: a comprehensive overview](https://medium.com/fabric-ventures/decentralised-oracles-a-comprehensive-overview-d3168b9a8841)
 
