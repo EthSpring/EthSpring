@@ -14,6 +14,9 @@ The key benefit to moving 99% of finance on to a blockchain is that it allows re
 [Liquidity Mining: A User-Centric Token Distribution Strategy](https://medium.com/bollinger-investment-group/liquidity-mining-a-user-centric-token-distribution-strategy-1d05c5174641)
 
 ## Trading
+
+Trading protocols let you swap one ERC20 token for another.
+
 ### Uniswap
 
 [Uniswap - A Unique Exchange](https://medium.com/scalar-capital/uniswap-a-unique-exchange-f4ef44f807bf) - A good introduction on fundamental ideas behind Uniswap
@@ -62,7 +65,7 @@ The key benefit to moving 99% of finance on to a blockchain is that it allows re
 
 ### Curve.fi
 
-Please go over Week 1 Topic 2 if you are not familiar with Uniswap.
+Curve.fi is an automated market maker similar to Uniswap, but trying to fix some of the issues with how Uniswap works. Please read the Uniswap section first.
 
 [Curve.fi, how to get started?](https://medium.com/@crypto.tutorials/curve-fi-how-does-it-work-b673a8fe16cc)
 
@@ -72,9 +75,8 @@ Please go over Week 1 Topic 2 if you are not familiar with Uniswap.
 
 [What is yCRV: A comprehensive guide](https://btcgeek.com/what-is-ycrv-guide/) - also explains yDAI, yUSDC, yUSDT, yTUSD
 
-(Optional) [Constant Function Market Makers: DeFi's "Zero to One" Innovation](https://medium.com/bollinger-investment-group/constant-function-market-makers-defis-zero-to-one-innovation-968f77022159)
 
-(Optional) [How do liquidity pools work? - Video](https://www.youtube.com/watch?v=cizLhxSKrAc)
+[How do liquidity pools work? - Video](https://www.youtube.com/watch?v=cizLhxSKrAc)
 
 **Quests**
 
@@ -83,8 +85,8 @@ Please go over Week 1 Topic 2 if you are not familiar with Uniswap.
 
   To [boost your CRV rewards](https://resources.curve.fi/guides/boosting-your-crv-rewards), before deposit, you can use calculator to identify veCRV amount for 2.5x, mint veCRV with locker (must go buy CRV); and press "Deposit and stake in gauge" while deposit.
 
-- [ ] (Optional) Withdraw liquidity from a pool - select pool, go to "withdraw" tab.
-- [ ] (Optional) [Loopring](https://medium.com/loopring-protocol/loopring-launches-zkrollup-exchange-loopring-io-d6a85beeed21) is another decentralized exchange. It is a "layer 2" exchange built with zkSNARKS. Make a transaction on [Loopring](https://loopring.org/#/).
+- [ ] Withdraw liquidity from a pool - select pool, go to "withdraw" tab.
+- [ ] [Loopring](https://medium.com/loopring-protocol/loopring-launches-zkrollup-exchange-loopring-io-d6a85beeed21) is another decentralized exchange. It is a "layer 2" exchange built with zkSNARKS. Make a transaction on [Loopring](https://loopring.org/#/).
 
 ### Balancer
 
