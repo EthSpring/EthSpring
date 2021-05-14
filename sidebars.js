@@ -93,7 +93,6 @@ module.exports = {
       items: [
         "ethereum-applications/0-preface",
         "ethereum-applications/1-erc-20-tokens",
-        "ethereum-applications/2-stablecoins",
         "ethereum-applications/3-nfts-collectibles-socks",
         "ethereum-applications/4-games",
         "ethereum-applications/5-finance-and-investing",
