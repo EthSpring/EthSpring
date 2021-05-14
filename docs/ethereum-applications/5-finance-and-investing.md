@@ -13,7 +13,8 @@ The key benefit to moving 99% of finance on to a blockchain is that it allows re
 
 [Liquidity Mining: A User-Centric Token Distribution Strategy](https://medium.com/bollinger-investment-group/liquidity-mining-a-user-centric-token-distribution-strategy-1d05c5174641)
 
-## Uniswap
+## Trading
+### Uniswap
 
 [Uniswap - A Unique Exchange](https://medium.com/scalar-capital/uniswap-a-unique-exchange-f4ef44f807bf) - A good introduction on fundamental ideas behind Uniswap
 
@@ -52,32 +53,7 @@ The key benefit to moving 99% of finance on to a blockchain is that it allows re
 - [ ] (Optional) Remove liquidity from the Uniswap pool
 - [ ] (Optional, advanced) Create your own ERC20 token, and add it to Uniswap
 
-## Compound
-
-[A graphic Guide to Compound](https://docs.ethhub.io/guides/graphical-guide-to-compound/) - An overview
-
-[Compound docs](https://compound.finance/docs) - Worth going through, especially the guides
-
-[How to Earn Interest and Borrow Ethereum Assets](https://medium.com/compound-finance/the-compound-guide-to-supplying-borrowing-crypto-assets-94821f2950a0) - With Screenshots
-
-[Compound calculator](http://www.predictions.exchange/compound/None) - Shows you how much $COMP would be distributed based on tokens supplied and borrowed.
-
-(Optional) [How to maximize yield farms with Instadapp](https://newsletter.banklesshq.com/p/how-to-maximize-yield-farms-with)
-
-[Compound Governance](https://medium.com/compound-finance/compound-governance-5531f524cf68)
-
-- As part of this decentralization process, Compound upgraded their [smart contracts](https://github.com/compound-finance/compound-protocol) to shift from admin control to community governance. This is good example of how smart contracts are upgraded in production: worth looking into [ComptrollerInterface.sol](https://github.com/compound-finance/compound-protocol/blob/master/contracts/ComptrollerInterface.sol); [Comptroller.sol](https://github.com/compound-finance/compound-protocol/blob/master/contracts/Comptroller.sol), [ComptrollerG1.sol](https://github.com/compound-finance/compound-protocol/blob/master/contracts/ComptrollerG1.sol), [ComptrollerG2.sol](https://github.com/compound-finance/compound-protocol/blob/master/contracts/ComptrollerG2.sol) - those are for different versions of logics; [ComptrollerStorage.sol](https://github.com/compound-finance/compound-protocol/blob/master/contracts/ComptrollerStorage.sol) - this has the corresponding three versions of storage.
-
-  For another smart contract upgrade example, see [USDC v2: upgrading a multi-billion dollar ERC-20 token](https://blog.coinbase.com/usdc-v2-upgrading-a-multi-billion-dollar-erc-20-token-b57cd9437096).
-
-- In Compound, proposals are [executable code](https://app.compound.finance/vote), not suggestions for a team or foundation to implement. Once a proposal passed, it is queued in the [Timelock](https://app.compound.finance/timelock), and can be executed after a grace period. See the [smart contract code](https://compound.finance/docs/governance?ref=github&user=ajb413&repo=compound-governance-examples) and [docs](https://compound.finance/docs/governance?ref=github&user=ajb413&repo=compound-governance-examples).
-
-**Quests**
-
-- [ ] Supply some assets on [Compound](https://app.compound.finance/) to start earning interest, and borrow some assets, calculate how much $COMP you are earning using [compound calculator](http://www.predictions.exchange/compound/None). Can do this on a testnet.
-- [ ] (Optional) [Aave](https://aave.com/) is another [lending protocol](https://www.youtube.com/watch?v=aTp9er6S73M). Deposit some ETH into [Aave](https://aave.com/) and start earning interest on your deposit from borrowers. **Note**: Given the amounts you'd be likely to deposit, your transaction fees will likely be much greater than the interest you earn. This quest is primarily for education purposes—don't expect it to earn you a substantial amount of crypto!
-
-## Curve.fi
+### Curve.fi
 
 Please go over Week 1 Topic 2 if you are not familiar with Uniswap.
 
@@ -103,7 +79,7 @@ Please go over Week 1 Topic 2 if you are not familiar with Uniswap.
 - [ ] (Optional) Withdraw liquidity from a pool - select pool, go to "withdraw" tab.
 - [ ] (Optional) [Loopring](https://medium.com/loopring-protocol/loopring-launches-zkrollup-exchange-loopring-io-d6a85beeed21) is another decentralized exchange. It is a "layer 2" exchange built with zkSNARKS. Make a transaction on [Loopring](https://loopring.org/#/).
 
-## Balancer
+### Balancer
 
 [How to make money with Balancer](https://newsletter.banklesshq.com/p/how-to-make-money-with-balancer) - with Screenshots
 
@@ -121,9 +97,38 @@ Please go over Week 1 Topic 2 if you are not familiar with Uniswap.
 
 - [ ] (Optional) Add liquidity to a [Balancer](https://pools.balancer.exchange/#/explore) pool and earn fees
 
+## Lending
+### Compound
+
+[A graphic Guide to Compound](https://docs.ethhub.io/guides/graphical-guide-to-compound/) - An overview
+
+[Compound docs](https://compound.finance/docs) - Worth going through, especially the guides
+
+[How to Earn Interest and Borrow Ethereum Assets](https://medium.com/compound-finance/the-compound-guide-to-supplying-borrowing-crypto-assets-94821f2950a0) - With Screenshots
+
+[Compound calculator](http://www.predictions.exchange/compound/None) - Shows you how much $COMP would be distributed based on tokens supplied and borrowed.
+
+(Optional) [How to maximize yield farms with Instadapp](https://newsletter.banklesshq.com/p/how-to-maximize-yield-farms-with)
+
+[Compound Governance](https://medium.com/compound-finance/compound-governance-5531f524cf68)
+
+- As part of this decentralization process, Compound upgraded their [smart contracts](https://github.com/compound-finance/compound-protocol) to shift from admin control to community governance. This is good example of how smart contracts are upgraded in production: worth looking into [ComptrollerInterface.sol](https://github.com/compound-finance/compound-protocol/blob/master/contracts/ComptrollerInterface.sol); [Comptroller.sol](https://github.com/compound-finance/compound-protocol/blob/master/contracts/Comptroller.sol), [ComptrollerG1.sol](https://github.com/compound-finance/compound-protocol/blob/master/contracts/ComptrollerG1.sol), [ComptrollerG2.sol](https://github.com/compound-finance/compound-protocol/blob/master/contracts/ComptrollerG2.sol) - those are for different versions of logics; [ComptrollerStorage.sol](https://github.com/compound-finance/compound-protocol/blob/master/contracts/ComptrollerStorage.sol) - this has the corresponding three versions of storage.
+
+  For another smart contract upgrade example, see [USDC v2: upgrading a multi-billion dollar ERC-20 token](https://blog.coinbase.com/usdc-v2-upgrading-a-multi-billion-dollar-erc-20-token-b57cd9437096).
+
+- In Compound, proposals are [executable code](https://app.compound.finance/vote), not suggestions for a team or foundation to implement. Once a proposal passed, it is queued in the [Timelock](https://app.compound.finance/timelock), and can be executed after a grace period. See the [smart contract code](https://compound.finance/docs/governance?ref=github&user=ajb413&repo=compound-governance-examples) and [docs](https://compound.finance/docs/governance?ref=github&user=ajb413&repo=compound-governance-examples).
+
+**Quests**
+
+- [ ] Supply some assets on [Compound](https://app.compound.finance/) to start earning interest, and borrow some assets, calculate how much $COMP you are earning using [compound calculator](http://www.predictions.exchange/compound/None). Can do this on a testnet.
+- [ ] (Optional) [Aave](https://aave.com/) is another [lending protocol](https://www.youtube.com/watch?v=aTp9er6S73M). Deposit some ETH into [Aave](https://aave.com/) and start earning interest on your deposit from borrowers. **Note**: Given the amounts you'd be likely to deposit, your transaction fees will likely be much greater than the interest you earn. This quest is primarily for education purposes—don't expect it to earn you a substantial amount of crypto!
+
 ## Synthetic Assets
 
+
 [The promise and potential of synthetic assets](https://blog.coinbase.com/around-the-block-8-the-promise-and-potential-of-synthetic-assets-9fbb15c2b24e)
+
+## UMA
 
 [UMA - Enabling Universal Market Access](https://medium.com/uma-project/uma-enabling-universal-market-access-266eb9e5fd90)
 
@@ -131,16 +136,10 @@ Please go over Week 1 Topic 2 if you are not familiar with Uniswap.
 
 [UMA's Data Verification Mechanism](https://medium.com/uma-project/umas-data-verification-mechanism-3c5342759eb8) - oracle
 
+## Synthetix
 (Optional) [What is Synthetix and how does it work?](https://www.gemini.com/cryptopedia/synthetix)
 
 (Optional) [Synthetix SNX Staking & sUSD minting tutorial](https://defirate.com/snx-staking-tutorial/)
-
-## **Yearn**
-
-[Yearn finance and YFI token explained](https://www.youtube.com/watch?v=qG1goOptZ5w) - Video
-
-[What are Yearn Vaults? ETH Vault explained - Video](https://www.youtube.com/watch?v=9vTaNl2_B8A)
-[How to use Yearn Vaults in Argent](https://www.argent.xyz/blog/yearn-vaults-in-argent/)
 
 ## Oracle
 
@@ -155,3 +154,11 @@ Please go over Week 1 Topic 2 if you are not familiar with Uniswap.
 [Building a price oracle on Uniswap v2](https://uniswap.org/docs/v2/smart-contract-integration/building-an-oracle/)
 
 [UMA as an Oracle](https://medium.com/uma-project/umas-data-verification-mechanism-3c5342759eb8)
+
+## Yield Aggregators
+### Yearn
+
+[Yearn finance and YFI token explained](https://www.youtube.com/watch?v=qG1goOptZ5w) - Video
+
+[What are Yearn Vaults? ETH Vault explained - Video](https://www.youtube.com/watch?v=9vTaNl2_B8A)
+[How to use Yearn Vaults in Argent](https://www.argent.xyz/blog/yearn-vaults-in-argent/)
