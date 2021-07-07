@@ -48,18 +48,14 @@ Such users have two options:
 
   does
 
-- They can run a also known as a . Running allows you to participate directly in the Ethereum network (sending transaction requests, reading blockchain data) without having hundreds of GB of free space, albeit in a limited fashion.
-
-  light node,
-
-  light client
+- They can run a *light node*, also known as a *light client*. Running allows you to participate directly in the Ethereum network (sending transaction requests, reading blockchain data) without having hundreds of GB of free space, albeit in a limited fashion.
 
 Light nodes are extremely important because they allow for more widespread participation in the Ethereum network. We outline the key functionality of a light node below:
 
 - **A light node does not store the full state of the EVM**. Rather, it stores a sort of “checksum” (basically a hash) of the EVM state, and requests data about the EVM state on-demand from full node peers, using the checksum to verify the validity of the data. For example, if I’m running a light node on my computer, my computer does not store the exact balance in Alice’s account; however, since my light node connects to a full node which does store this balance, I can request the balance data, and then check this with my checksum of the EVM state. The particular mechanism/data structure which allows me to verify validity quickly with only a checksum is outlined later, in the section on Merkle Trees.
 - **A light node by default does not store all block data—only block headers.** When a new block is propagated to the network, light clients only receive the block header (which includes a block data checksum and other basic metadata) from full node peers. If a light node wants to know about a particular transaction in a block, it requests that particular transaction data from a full node peer, and then validates the data against the block checksum.
 - **A light node can make transaction requests to the network**. Any user can write (and sign) a transaction request and broadcast it to the network from the light node. The light node propagates the transaction request to its full node peers, which in turn propagate the request to the rest of the network.
-- **Light nodes only connect to full nodes, and generally take up network resources rather than providing them.**Light clients don’t store the full EVM state or full block data, so there is no reason for them to connect to each other. Since they are constantly requesting data and never passing on data, they are a drain on the bandwidth and network resources of full node peers. Running light nodes does not improve the health of the network.
+- **Light nodes only connect to full nodes, and generally take up network resources rather than providing them.** Light clients don’t store the full EVM state or full block data, so there is no reason for them to connect to each other. Since they are constantly requesting data and never passing on data, they are a drain on the bandwidth and network resources of full node peers. Running light nodes does not improve the health of the network.
 - **Light clients can’t mine**. You need to run a full node to mine.
 
 ## Ethereum Node Clients

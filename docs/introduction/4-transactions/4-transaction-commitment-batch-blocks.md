@@ -19,6 +19,4 @@ The specific details and implications of Ethereum’s current Proof-of-Work cons
 
 A final important note is that blocks themselves are bounded in size. Each block has a block gas limit which is set by the network and the miners collectively: the total amount of gas expended by all transactions in the block must be less than the block gas limit. This is important because it ensures that blocks can’t be arbitrarily large. If blocks could be arbitrarily large, then less performant full nodes would gradually stop being able to keep up with the network due to space and speed requirements. The block gas limit at block 0 was initialized to 5,000; any miner who mines a new block can alter the gas limit by up to about 0.1% in either direction from the parent block gas limit. The gas limit as of November 2018 currently hovers around 8,000,000.
 
-- The implications of proof-of-work are fairly nuanced, and all of these statements are not true, though in practice these properties usually hold.
-
-  strictly
+- The implications of proof-of-work are fairly nuanced, and all of these statements are not *strictly* true, though in practice these properties usually hold.
