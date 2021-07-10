@@ -46,9 +46,7 @@ Such users have two options:
 
 - They can either connect to the Ethereum network by communicating with someone who run a node, asking that node to send transaction requests and querying the node for relevant information about the blockchain (such as account balances). This is somewhat at odds with the philosophy of the Ethereum project and of decentralized projects broadly, as it encourages reliance on centralized service providers who have the resources to run nodes.
 
-  does
-
-- They can run a *light node*, also known as a *light client*. Running allows you to participate directly in the Ethereum network (sending transaction requests, reading blockchain data) without having hundreds of GB of free space, albeit in a limited fashion.
+- They can run a light node, also known as a light client. Running a light node, allows you to participate directly in the Ethereum network (sending transaction requests, reading blockchain data) without having hundreds of GB of free space, albeit in a limited fashion.
 
 Light nodes are extremely important because they allow for more widespread participation in the Ethereum network. We outline the key functionality of a light node below:
 
