@@ -17,7 +17,7 @@ If you want to decrease the expected time for your transaction to be included in
 We can use all of the above information to calculate our transaction fee. We are paying 3 GWEI per unit of gas, for exactly 21000 units of gas. This means that we’ll pay a total of 63000 GWEI = 6.3 \* 10^-5 = 0.000063 ether (as we can see in the fourth image). The current price of ether is $171.57 as of November 18th, 2018, so this translates to a transaction fee of about one cent.
 
 <p align="middle">
-  <img style="float: left;" src="https://paper-attachments.dropbox.com/s_6499DBB606E17BAD45838C653994E18D32BD929FD5D115FA472134B464A847EC_1542594413149_image.png" width="200" />
+  <img style={{ float: "left" }} src="https://paper-attachments.dropbox.com/s_6499DBB606E17BAD45838C653994E18D32BD929FD5D115FA472134B464A847EC_1542594413149_image.png" width="200" />
 </p>
 <p align = "center">
   <i>I attempt to send $5 USD of ether to another account. My total gas fee is under 1 cent.</i>
@@ -25,7 +25,7 @@ We can use all of the above information to calculate our transaction fee. We are
 <br />
 
 <p align="middle">
-  <img style="float: right;" src="https://paper-attachments.dropbox.com/s_6499DBB606E17BAD45838C653994E18D32BD929FD5D115FA472134B464A847EC_1542594340966_image.png" width="200" />
+  <img style={{ float: "left" }} src="https://paper-attachments.dropbox.com/s_6499DBB606E17BAD45838C653994E18D32BD929FD5D115FA472134B464A847EC_1542594340966_image.png" width="200" />
 </p>
 <p align = "center">
   <i>I click the blue button in the Gas fee field, and see that by default MetaMask suggests 1GWEI as the gas price.</i>
