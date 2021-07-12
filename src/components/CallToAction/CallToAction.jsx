@@ -15,7 +15,7 @@ export default function CallToAction() {
             <div>
               <Link
                 className="button button--primary button--lg"
-                to="/docs/introduction/1-introduction/1-ethereum-101"
+                to="/docs/introduction/introduction/1-ethereum-101"
               >
                 Get Started
               </Link>
