@@ -8,7 +8,7 @@ export default function HoverBox() {
         <div className="row">
           <div className="col col--6">
             <div>
-              <h2>✉️ Join the Newsletter!</h2>
+              <h2 style={{ marginTop: 0 }}>✉️ Join the Newsletter!</h2>
               <p>We'll periodically send out additional resources, recordings of talks, and even invitations to apply to learning cohorts we host in the future.
               </p>
             </div>

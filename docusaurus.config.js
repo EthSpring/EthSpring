@@ -87,9 +87,10 @@ module.exports = {
           editUrl:
             'https://github.com/MYKatz/EthSpring/edit/master/blog/',
         },
-        theme: {
-          customCss: [require.resolve('./src/css/custom.css')],
-        },
+        customCss: [
+          require.resolve("./src/css/ethereum-org-website.css"),
+          require.resolve("./src/css/custom.css"),
+        ],
       },
     ],
   ],
