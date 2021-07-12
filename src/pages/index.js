@@ -4,6 +4,7 @@ import Layout from "@theme/Layout";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
+import { CardContainer } from "../components/ethereum-org-website/";
 import HoverBox from "../components/HoverBox/HoverBox";
 import NewsletterSignup from "../components/NewsletterSignup/NewsletterSignup";
 import CallToAction from "../components/CallToAction/CallToAction";
@@ -101,18 +102,16 @@ export default function Home() {
         </div>
       </header>
       <main>
-        <CallToAction />
-        {features && features.length > 0 && (
-          <section className={styles.features}>
-            <div className={styles.featuresContainer}>
-              <div className={styles.featuresRow}>
-                {features.map((props, idx) => (
-                  <HoverBox key={idx} {...props} />
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
+        <div style={{ width: "80%", margin: "0 auto", padding: "50px" }}>
+          <CallToAction />
+          {features && features.length > 0 && (
+            <CardContainer style={{ justifyContent: 'center' }}>
+              {features.map((props, idx) => (
+                <HoverBox key={idx} {...props} />
+              ))}
+            </CardContainer>
+          )}
+        </div>
         <NewsletterSignup />
       </main>
     </Layout>
