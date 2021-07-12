@@ -9,7 +9,7 @@ First, I open MetaMask and click “send.” This takes me to a panel that allow
 
 MetaMask automatically suggests a gas price and gas limit for your transaction based on the current market conditions. Together, these determine the total transaction fee that you pay. In this example, we see that MetaMask has automatically set the Gas Price as 1 GWEI, and the Gas Limit as 21000. Let’s break this down:
 
-- The Gas Price is the amount of ether you’re willing to pay per unit of gas (computation) that this transaction takes on the EVM. 1 GWEI is shorthand for <img src="https://render.githubusercontent.com/render/math?math=10^{-9}"> ether. We usually talk about gas in terms of GWEI, since transaction fees are usually on the order of several GWEI per unit of computation. MetaMask suggests 1 GWEI per unit of gas as of November 18th, 2018.
+- The Gas Price is the amount of ether you’re willing to pay per unit of gas (computation) that this transaction takes on the EVM. 1 GWEI is shorthand for <img src="https://render.githubusercontent.com/render/math?math=10^{-9}" /> ether. We usually talk about gas in terms of GWEI, since transaction fees are usually on the order of several GWEI per unit of computation. MetaMask suggests 1 GWEI per unit of gas as of November 18th, 2018.
 - The Gas Limit is the maximum number of units of gas (computation) you’re willing to pay for. An exact mapping between Ethereum Virtual Machine instructions and units of gas is given precisely in the Ethereum yellowpaper. We can see in the images below that MetaMask suggests 21000 units of gas as the gas limit—since the EVM operates deterministically, it is actually known that any transaction that just executes a transfer of ether will always take exactly 21000 gas, so MetaMask sets this automatically for us.
 
 If you want to decrease the expected time for your transaction to be included in a block (mined), you can manually increase the gas price, as we’ve done in the third image below (we’ve set the gas price to 3 GWEI). If you’d like to pay a lower transaction fee and don’t mind waiting for your transaction to be mined, you can decrease the gas price.
@@ -17,7 +17,7 @@ If you want to decrease the expected time for your transaction to be included in
 We can use all of the above information to calculate our transaction fee. We are paying 3 GWEI per unit of gas, for exactly 21000 units of gas. This means that we’ll pay a total of 63000 GWEI = 6.3 \* 10^-5 = 0.000063 ether (as we can see in the fourth image). The current price of ether is $171.57 as of November 18th, 2018, so this translates to a transaction fee of about one cent.
 
 <p align="middle">
-  <img style="float: left;" src="https://paper-attachments.dropbox.com/s_6499DBB606E17BAD45838C653994E18D32BD929FD5D115FA472134B464A847EC_1542594413149_image.png" width="200" />
+  <img style={{ float: "left" }} src="https://paper-attachments.dropbox.com/s_6499DBB606E17BAD45838C653994E18D32BD929FD5D115FA472134B464A847EC_1542594413149_image.png" width="200" />
 </p>
 <p align = "center">
   <i>I attempt to send $5 USD of ether to another account. My total gas fee is under 1 cent.</i>
@@ -25,7 +25,7 @@ We can use all of the above information to calculate our transaction fee. We are
 <br />
 
 <p align="middle">
-  <img style="float: right;" src="https://paper-attachments.dropbox.com/s_6499DBB606E17BAD45838C653994E18D32BD929FD5D115FA472134B464A847EC_1542594340966_image.png" width="200" />
+  <img style={{ float: "left" }} src="https://paper-attachments.dropbox.com/s_6499DBB606E17BAD45838C653994E18D32BD929FD5D115FA472134B464A847EC_1542594340966_image.png" width="200" />
 </p>
 <p align = "center">
   <i>I click the blue button in the Gas fee field, and see that by default MetaMask suggests 1GWEI as the gas price.</i>
