@@ -1,6 +1,8 @@
 ---
 id: 3-zksnark-theory
 title: "Section 3: zkSNARK Theory (Very Math-Heavy)"
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 This section touches on the mathematics behind zkSNARKs, a powerful new zero-knowledge gadget first invented in 2012. zkSNARKs first became viable in production in blockchain systems in the last few years; they are something of a "cryptographic nuke." You should only consider this track if you're completely familiar with everything in Section 2-—I'd recommend not working on this section unless all of the material in Section 2 is very familiar to you.

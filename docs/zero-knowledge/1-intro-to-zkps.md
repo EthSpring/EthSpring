@@ -1,6 +1,8 @@
 ---
 id: 1-intro-to-zkps
 title: "Section 1: Introduction to ZKPs"
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 This section provides a conceptual introduction to ZKPs (zero-knowledge proofs).

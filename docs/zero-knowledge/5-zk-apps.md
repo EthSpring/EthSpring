@@ -1,6 +1,8 @@
 ---
 id: 5-zk-apps
 title: "Section 5: ZK Applications in Blockchain"
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 This section focuses on real production use cases of ZK, including mixers/games/rollup on Ethereum, and ZCash / privacy coins. This is probably the friendliest section for engineering-minded readers.

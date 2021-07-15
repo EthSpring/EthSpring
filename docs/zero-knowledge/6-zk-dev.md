@@ -1,6 +1,8 @@
 ---
 id: 6-zk-dev
 title: "Section 6: Building with ZK"
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 This section focuses on resources for building decentralized applications with zkSNARKs.

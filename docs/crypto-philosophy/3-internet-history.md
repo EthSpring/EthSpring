@@ -1,6 +1,7 @@
 ---
 id: 3-internet-history
 title: "Internet, Software, and Computing History"
+author: gubsheep
 ---
 
 A collection of books and essays about the history of computing and the Internet that we particularly liked.

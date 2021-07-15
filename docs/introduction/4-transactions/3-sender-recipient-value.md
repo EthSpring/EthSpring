@@ -1,6 +1,8 @@
 ---
 title: "4.3 Sender, recipient, and value"
 id: 3-sender-recipient-value
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 Every transaction request has three required fields: “to,” “from,” and “value” fields. In this section, we explain why each of these fields are necessarily in all transactions, even transactions which represent smart contract code execution on the EVM (rather than simple ether transfer).

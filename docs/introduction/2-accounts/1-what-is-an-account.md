@@ -1,6 +1,8 @@
 ---
 title: "2.1 What is an account?"
 id: 1-what-is-an-account
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 In Ethereum, an account is a construct which holds ether and possibly other metadata. At a basic level, an account is made of:

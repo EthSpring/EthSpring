@@ -1,6 +1,8 @@
 ---
 title: "3.1 Pigeon Internet"
 id: 1-pigeon-internet
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 When I was a kid, my model of the Internet was something like “a bunch of machines in a big room shouting information at each other super fast.” This made it very hard to understand why designing a robust consensus protocol for a digital cash system is hard: if all of the participants can be forced to act according to pre-programmed behavior and in accordance with a clearly-specified protocol, and if all communication is happening pretty much instantaneously, why can’t every node on a digital cash system just instantly synchronize on every transaction and state change?

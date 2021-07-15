@@ -1,6 +1,8 @@
 ---
 id: 4-mpc
 title: "Section 4: Trusted Setup and Multi-Party Computation"
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 This section covers trusted setup, a process needed to generate the public parameters of a zkSNARK securely. We include some resources on the underlying mathematics and some resources on actually participating in an MPC.

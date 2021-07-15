@@ -1,6 +1,7 @@
 ---
 id: 4-scifi-misc
 title: "Science Fiction and Spirituality"
+author: gubsheep, Sina Habibian, Albert Ni
 ---
 
 ## Science Fiction

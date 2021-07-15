@@ -1,6 +1,8 @@
 ---
 title: "2.4 Getting ether"
 id: 4-getting-ether
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 Users interact with the Ethereum blockchain by making transactions, which we’ll discuss in more detail later. All transactions (operations like sending cryptocurrency, requesting code execution on the EVM, or interacting with a DApp) require paying some amount of ether to the network in transaction fees. So in order to do anything at all with the Ethereum network, we need ether in our wallet.

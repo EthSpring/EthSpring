@@ -1,6 +1,8 @@
 ---
 title: "3.3 What is an Ethereum Node?"
 id: 3-what-is-an-ethereum-node
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 Ethereum nodes are computer programs that communicate with each other in accordance with the Ethereum protocol. In this section, we’ll explain what an Ethereum node is, as well the different types of nodes.

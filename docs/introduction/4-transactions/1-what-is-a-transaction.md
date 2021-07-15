@@ -1,6 +1,8 @@
 ---
 title: "4.1 What is a transaction?"
 id: 1-what-is-a-transaction
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 An Ethereum transaction is any code execution that changes state of the EVM. Currently, the simplest transactions look like the trivial financial transaction of transferring ether:

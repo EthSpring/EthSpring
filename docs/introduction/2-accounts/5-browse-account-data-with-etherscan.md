@@ -1,6 +1,8 @@
 ---
 title: "2.5 Browse account data with Etherscan"
 id: 5-browse-account-data-with-etherscan
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 Etherscan is a helpful web application that allows you to view information about the Ethereum blockchain in a human-readable way.

@@ -1,6 +1,8 @@
 ---
 title: "3.2 Peer-to-Peer Systems"
 id: 2-peer-to-peer-systems
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 Ethereum, Bitcoin, and other cryptocurrencies are based on peer-to-peer networks (P2P).

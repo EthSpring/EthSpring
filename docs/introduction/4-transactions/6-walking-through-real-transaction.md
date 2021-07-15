@@ -1,6 +1,8 @@
 ---
 title: "4.6 Walking Through a Real Transaction"
 id: 6-walking-through-real-transaction
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 The easiest way to understand how transaction work is to walk through an example transaction. In this section, we’ll walk through a transaction made with MetaMask.

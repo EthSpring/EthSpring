@@ -1,6 +1,8 @@
 ---
 id: 0-preface
 title: Preface
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 "Zero Knowledge" cryptography refers to a powerful set of techniques and tools that allow participants in a network to prove facts about computations (knowledge of a secret number; correct execution of a function; etc.) while partially concealing information about the computations. For example, zero-knowledge cryptography might allow a user of a cryptocurrency network to deposit or withdraw currency from a vault, without revealing to the wider network the amounts that they are depositing or withdrawing.

@@ -1,6 +1,8 @@
 ---
 title: "2.3 Setting up your first wallet"
 id: 3-setting-up-first-wallet
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 **MetaMask** is a user-friendly and secure way to manage your Ethereum accounts/wallets.

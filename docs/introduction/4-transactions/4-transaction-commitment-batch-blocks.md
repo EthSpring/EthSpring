@@ -1,6 +1,8 @@
 ---
 title: "4.4 Transactions and blocks"
 id: 4-transaction-commitment-batch-blocks
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 **Transactions are committed to the network in batches, or "blocks"**

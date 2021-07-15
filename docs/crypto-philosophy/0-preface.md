@@ -1,6 +1,7 @@
 ---
 id: 0-preface
 title: Preface
+author: gubsheep, Sina Habibian, Albert Ni
 ---
 
 This section contains a partially-annotated reading list compiled by a handful of Ethereum Foundation affiliates and student volunteers.

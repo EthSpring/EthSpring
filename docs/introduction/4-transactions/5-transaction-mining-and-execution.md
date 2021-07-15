@@ -1,6 +1,8 @@
 ---
 title: "4.5 Transaction mining and execution"
 id: 5-transaction-mining-and-execution
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 **Transactions are mined once, but executed by everyone**

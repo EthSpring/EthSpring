@@ -1,6 +1,8 @@
 ---
 title: "3.5 Running a Node with Geth"
 id: 5-running-a-node-with-geth
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 You may be interested in running an Ethereum node. One of the easiest ways to do so is by downloading, installing, and running [Geth](https://github.com/ethereum/go-ethereum/wiki/geth). With Geth, we can have a light node up and running in minutes.
