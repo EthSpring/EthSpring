@@ -1,6 +1,7 @@
 ---
 title: "Consensus Protocols"
 id: 2-consensus-protocols
+author: Yan Zhang, Nick Ulven
 ---
 
 At their core, blockchains exist due to consensus protocols developed based on the concepts of distributed system design. Consensus protocols determine how transactions are validated, how governance is maintained, and how attacks are mitigated.

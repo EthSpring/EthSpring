@@ -1,5 +1,6 @@
 ---
 title: Reading List
+author: DC Posch
 ---
 
 # Preface

@@ -1,6 +1,7 @@
 ---
 title: "Distributed Systems Theory"
 id: 1-distributed-systems
+author: Yan Zhang, Nick Ulven
 ---
 
 To understand blockchain consensus protocols, requires some understanding of the primitives and issues discussed generally in distributed system design.
