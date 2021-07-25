@@ -16,37 +16,45 @@ If you want to decrease the expected time for your transaction to be included in
 
 We can use all of the above information to calculate our transaction fee. We are paying 3 GWEI per unit of gas, for exactly 21000 units of gas. This means that we’ll pay a total of 63000 GWEI = 6.3 \* 10^-5 = 0.000063 ether (as we can see in the fourth image). The current price of ether is $171.57 as of November 18th, 2018, so this translates to a transaction fee of about one cent.
 
+<div style={{ display: "flex", "flex-direction": "row", "justify-content": "space-around" }}>
+<div style={{ display: "flex", "flex-direction": "column", width: "300px" }}>
 <p align="middle">
-  <img style={{ float: "left" }} src="https://paper-attachments.dropbox.com/s_6499DBB606E17BAD45838C653994E18D32BD929FD5D115FA472134B464A847EC_1542594413149_image.png" width="200" />
+<img style={{ float: "center" }} src="https://paper-attachments.dropbox.com/s_6499DBB606E17BAD45838C653994E18D32BD929FD5D115FA472134B464A847EC_1542594413149_image.png" width="300" />
 </p>
-<p align = "center">
+<p align = "center" >
   <i>I attempt to send $5 USD of ether to another account. My total gas fee is under 1 cent.</i>
 </p>
-<br />
-
+</div>
+<div style={{ display: "flex", "flex-direction": "column", width: "300px" }}>
 <p align="middle">
-  <img style={{ float: "left" }} src="https://paper-attachments.dropbox.com/s_6499DBB606E17BAD45838C653994E18D32BD929FD5D115FA472134B464A847EC_1542594340966_image.png" width="200" />
+  <img style={{ float: "center" }} src="https://paper-attachments.dropbox.com/s_6499DBB606E17BAD45838C653994E18D32BD929FD5D115FA472134B464A847EC_1542594340966_image.png" width="300" />
 </p>
 <p align = "center">
   <i>I click the blue button in the Gas fee field, and see that by default MetaMask suggests 1GWEI as the gas price.</i>
 </p>
+</div>
+</div>
 <br />
 
+<div style={{ display: "flex", "flex-direction": "row", "justify-content": "space-around" }}>
+<div style={{ display: "flex", "flex-direction": "column", width: "300px" }}>
 <p align="middle">
-  <img src="https://paper-attachments.dropbox.com/s_6499DBB606E17BAD45838C653994E18D32BD929FD5D115FA472134B464A847EC_1542070310628_image.png" 
-width="200" />
+  <img style={{ float: "center" }} src="https://paper-attachments.dropbox.com/s_6499DBB606E17BAD45838C653994E18D32BD929FD5D115FA472134B464A847EC_1542070310628_image.png" 
+width="300" />
 </p>
 <p align = "center">
   <i>I want my transaction to be confirmed faster, so I increase my Gas Price to 3GWEI.</i>
 </p>
-<br />
-
+</div>
+<div style={{ display: "flex", "flex-direction": "column", width: "300px" }}>
 <p align="middle">
-  <img src="https://paper-attachments.dropbox.com/s_6499DBB606E17BAD45838C653994E18D32BD929FD5D115FA472134B464A847EC_1542594277323_image.png" width="200" />
+  <img style={{ float: "center" }} src="https://paper-attachments.dropbox.com/s_6499DBB606E17BAD45838C653994E18D32BD929FD5D115FA472134B464A847EC_1542594277323_image.png" width="300" />
 </p>
 <p align = "center">
   <i>I save and hit "Next", bringing me to my confirmation screen. The total amount of ether that I pay is the sum of my transfer amount and the transaction (gas) fee.</i>
 </p>
+</div>
+</div>
 <br />
 
 Once you’re satisfied with the gas price, hit “save” and “next” to continue to the confirmation screen. Hit “confirm” to send your transaction request to the network. Metamask then signs the transaction request with your private key (stored in-browser), sends the request to a machine which they manage which runs an Ethereum node, and starts broadcasting your signed transaction request to other nodes on the Ethereum network.
@@ -69,9 +77,10 @@ The second image shows the page Etherscan displays after its nodes have added ou
 
 The third image shows the page displayed once the transaction has been included in a block mined by some miner and propagated to Etherscan’s nodes. Now we can see that our transaction has been “committed” to the network, in block 6731001. If you’d like to see this transaction for yourself, you can visit [this Etherscan link](https://etherscan.io/tx/0xd58b7dd1d79ddb0596319c0126e2593b6704cfba21e948c73c608b0e9ab930a1). We can also see our confirmed transaction reflected in MetaMask at this time.
 
-<p align="middle">
-  <img src="https://paper-attachments.dropbox.com/s_6499DBB606E17BAD45838C653994E18D32BD929FD5D115FA472134B464A847EC_1542594768897_image.png" width="600" />
+<div style={{ display: "flex", "flex-direction": "row", "justify-content": "space-around" }}>
+  <img src="https://paper-attachments.dropbox.com/s_6499DBB606E17BAD45838C653994E18D32BD929FD5D115FA472134B464A847EC_1542594768897_image.png" width="500" />
   <img src="https://paper-attachments.dropbox.com/s_6499DBB606E17BAD45838C653994E18D32BD929FD5D115FA472134B464A847EC_1542596227606_image.png" width="300" />
-</p>
+</div>
+<br />
 
 [Here](https://medium.com/blockchannel/life-cycle-of-an-ethereum-transaction-e5c66bae0f6e) is another great guide which walks through the transaction lifecycle in a little more detail, taking as a case example a contract.
