@@ -1,6 +1,7 @@
 ---
 id: 2-eth-principles
 title: Ethereum Design Principles
+author: gubsheep, Albert Ni
 ---
 
 This is a collection of more recent resources (mostly essays by Vitalik Buterin) which outline some of the goals and design principles behind Ethereum and other decentralized systems.

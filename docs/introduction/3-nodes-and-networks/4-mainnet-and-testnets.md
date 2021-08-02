@@ -1,6 +1,8 @@
 ---
 title: "3.4 Mainnet and Testnets"
 id: 4-mainnet-and-testnets
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 Ethereum is a protocol; there can be multiple independent networks conforming to this protocol that do not interact with each other.

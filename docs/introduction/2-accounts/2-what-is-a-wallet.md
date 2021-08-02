@@ -1,6 +1,8 @@
 ---
 title: "2.2 What is a wallet?"
 id: 2-what-is-a-wallet
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 ## Public-Key Cryptography: A Review

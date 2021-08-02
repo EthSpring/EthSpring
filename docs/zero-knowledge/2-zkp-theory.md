@@ -1,6 +1,8 @@
 ---
 id: 2-zkp-theory
 title: "Section 2: Zero Knowledge Protocols (Math-Heavy)"
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 This section covers the mathematics behind zero knowledge cryptography, which has been studied for a few decades. A basic number theory background will be helpful for understanding this section.

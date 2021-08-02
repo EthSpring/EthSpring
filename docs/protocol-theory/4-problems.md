@@ -1,6 +1,7 @@
 ---
 title: "Problem Set"
 id: 4-problems
+author: Yan Zhang
 ---
 
 1. If you control $p$ of the overall processing power in Bitcoin, what is the probability that you can get to $k$ blocks ahead of everyone else in the world at some point in a day? (you can make simplifying assumptions / modeling / estimations)

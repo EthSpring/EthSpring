@@ -1,6 +1,8 @@
 ---
 title: "4.2 Transaction fees and gas"
 id: 2-transaction-fees-and-gas
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 As stated, the model we just described presents several problems:

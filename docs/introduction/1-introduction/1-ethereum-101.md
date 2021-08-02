@@ -1,6 +1,8 @@
 ---
 title: "1.1 Ethereum 101"
 id: 1-ethereum-101
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 ## What is Ethereum?

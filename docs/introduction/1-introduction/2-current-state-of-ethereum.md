@@ -1,6 +1,8 @@
 ---
 title: "1.2 The current state of Ethereum"
 id: 2-current-state-of-ethereum
+author: gubsheep
+authorURL: https://twitter.com/gubsheep
 ---
 
 ## Where does the EVM live/who actually executes the code of a DApp?

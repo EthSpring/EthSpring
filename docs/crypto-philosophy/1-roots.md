@@ -1,6 +1,7 @@
 ---
 id: 1-roots
 title: Cypherpunk Roots / Crypto in Society
+author: gubsheep
 ---
 
 This is a list of essays, articles, and posts about the implications of strong cryptography for society. Many were written decades ago, when cryptography was just starting to become widely available in mainstream systems.
