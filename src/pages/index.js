@@ -70,6 +70,18 @@ const features = [
       </>
     ),
   },
+
+  {
+    title: "Eth2",
+    emoji: "⛓",
+    url: "/docs/eth2/0-preface",
+    description: (
+      <>
+        Contextualizing ‘Eth2’ and talking about Ethereum protocol governance, and
+        digging into the more interesting theoretical pieces of the future of Ethereum.
+      </>
+    ),
+  },
 ];
 
 function Feature({ imageUrl, title, description }) {

@@ -1,0 +1,29 @@
+---
+id: 3-sharding
+title: "Theory 2: Sharding, data availability sampling, and cryptography primitives"
+---
+
+### Readings:
+
+- [ ]  [Why Sharding is Great: demystifying the technical properties](https://vitalik.ca/general/2021/04/07/sharding.html)
+    
+    Sharding is a key component of the future of Ethereum Layer 1 and is one of the most misunderstood concepts in crypto (largely due to analogizing with database sharding). This post is a handy guide on what *exactly* sharding gives us and why it's crucial to add to Layer 1.
+    
+- [ ]  [Kate commitments (warning: Math!)](https://dankradfeist.de/ethereum/2020/06/16/kate-polynomial-commitments.html)
+    
+    Commitments to an ordered set of data that are cheap to prove inclusion on are a very key primitive in Layer 1 blockchains. Currently, [Merkle Patricia Trees](https://eth.wiki/fundamentals/patricia-tree) are used almost everywhere. Research into a more efficient data structure has led us to Kate commitments, which have some really nice properties and are likely to be a foundational cryptographic data structure in Layer 1 in the future.
+    
+- [ ]  [Data Availability Sampling with Kate commitments](https://hackmd.io/@vbuterin/sharding_proposal#ELI5-data-availability-sampling)
+    
+    Data availability sampling is the other half (other than sharding) of the known large Layer 1 changes to happen in the near future. It's a crucial scaling technology as well!
+    
+- [ ]  (optional) [Dankrad](https://dankradfeist.de/ethereum/2021/06/18/verkle-trie-for-eth1.html) and [Vitalik](https://vitalik.ca/general/2021/06/18/verkle.html) on Verkle Tries
+    
+    Verkle tries are a proposed data structure that are likely to end up in Eth1x to reduce witness size for stateless clients (don't worry if this makes no sense to you now). They're a great example in the short-term of how Kate commitments might be used.
+    
+
+### Intuitions to build:
+
+- [ ]  why build sharding into core consensus? how are shards different from rollups?
+- [ ]  what is data availability sampling? why is data availability important?
+- [ ]  what are Kate commitments good for?

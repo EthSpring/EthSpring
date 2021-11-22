@@ -1,0 +1,29 @@
+---
+id: 2-proof-of-stake
+title: "Theory 1: Proof of Stake consensus" 
+---
+
+### Readings:
+
+- [ ]  [Combining GHOST and Casper](https://arxiv.org/pdf/2003.03052.pdf)
+    
+    This paper covers the current design underlying Eth2 consensus. If there's one resource to understand thoroughly from this section, it's this one! Also, Yan is a co-author, so I'm sure he'll be available for answering any questions.
+    
+- [ ]  [Hotstuff](https://arxiv.org/pdf/1803.05069.pdf) and/or [Tendermint](https://tendermint.com/static/docs/tendermint.pdf) paper
+    
+    Sometimes it's useful to examine other, similar systems to understand the properties of a given system. Hotstuff and Tendermint are two other Proof-of-Stake systems with different properties from Eth2's. 
+    
+- [ ]  [How I Learned to Love Weak Subjectivity](https://blog.ethereum.org/2014/11/25/proof-stake-learned-love-weak-subjectivity/) and [Weak Subjectivity in Eth 2.0](https://notes.ethereum.org/@adiasg/weak-subjectvity-eth2)
+    
+    Objectivity/subjectivity in a blockchain consensus algorithm roughly tells us how much 'social information' is necessary for a new user to join it. These two readings spell out Eth2's design choice. This is an area that's somewhat political, as Eth2 explicitly isn't 'objective', but it's worth understanding why this might be ok.
+    
+- [ ]  (optional) [CBC Casper](https://vitalik.ca/general/2018/12/05/cbc_casper.html)
+    
+    CBC Casper is a 'purer' framework for consensus algorithms that may inform future directions for Eth2 consensus.
+    
+
+### Intuitions to build:
+
+- [ ]  defining Eth2 consensus as a fork-choice rule + slashing conditions
+- [ ]  liveness/safety guarantees of Eth consensus vs. Tendermint, Hotstuff, etc.
+- [ ]  what is weak subjectivity? why are we 'ok' with it?

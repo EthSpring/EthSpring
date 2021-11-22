@@ -1,0 +1,39 @@
+---
+id: 4-beacon-chain
+title: The Beacon chain today
+---
+
+### Readings:
+
+- [ ]  skim [Ben Edgington’s annotated beacon chain spec](https://benjaminion.xyz/eth2-annotated-spec/phase0/beacon-chain/) for understanding
+- [ ]  [The State of Eth2 (Jan 2021)](https://blog.ethereum.org/2021/01/20/the-state-of-eth2-january-2021/)
+    
+    Earlier this year, Danny Ryan laid out the coming year of Eth2 from his perspective. The plans here remain relevant and are worth a read.
+    
+- [ ]  Pintail’s posts on validator rewards: [1](https://pintail.xyz/posts/beacon-chain-validator-rewards/) & [2](https://pintail.xyz/posts/validator-rewards-in-practice/)
+    
+    These two posts lay out the validator reward structure in easy-to-understand prose. 
+    
+- [ ]  Learn about how a few staking pools work ([Rocket Pool](https://www.rocketpool.net/), [Lido](http://lido.finance/), [Blox Staking](https://www.bloxstaking.com/), [Stakewise](https://stakewise.io/))
+    
+    Staking pools may constitute a nontrivial amount of staked ETH in the future and it's important to understand how they work. Generally speaking, they're all DAOs on Ethereum that manage a set of operators with different rulesets around who's allowed to participate.
+    
+- [ ]  (if you're feeling ambitious) dive into the [eth2spec](https://github.com/ethereum/eth2.0-specs)
+    
+    The eth2spec is the realtime ground truth of what Eth2 implementers are implementing. It's entirely written in python, for ease of unit testing, which makes it hard to read from top-to-bottom. I'd recommend picking a part of the system that's interesting to you and diving in to see how it works!
+    
+
+### Quests:
+
+- [ ]  run a validator (deposit -> run one of the mainnet clients) on the Prater testnet
+    
+    Probably the best way to get familiar with the beacon chain is to literally participate! You can run a beacon chain client (like a full node in Eth1) without any ETH, but participating in consensus requires depositing 32ETH. Fortunately, you can do this on testnet for free (I have testnet ETH for everyone), so take a stab at running a client!
+    
+- [ ]  collect some data from mainnet using an eth2 client and [chaind](https://github.com/wealdtech/chaind)
+    
+    Sorta a choose-your-own adventure, but this task will force you to run a beacon node (basically a read-only eth2 node) on mainnet and get data. Some ideas of things to study:
+    
+    - attestation committee assignments and participation rates
+    - the activation/exit queues
+    - graffiti word cloud
+    - slashings

@@ -113,6 +113,21 @@ module.exports = {
         "zero-knowledge/6-zk-dev",
       ],
     },
+
+    {
+      type: "category",
+      label: "Eth2",
+      items: [
+        "eth2/0-preface",
+        "eth2/1-what-is-eth2",
+        "eth2/2-proof-of-stake",
+        "eth2/3-sharding",
+        "eth2/4-beacon-chain",
+        "eth2/5-merge",
+        "eth2/6-special-topic",
+        "eth2/7-workshop",
+      ],
+    },
     'ack'
   ],
 };
