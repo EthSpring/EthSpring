@@ -1,0 +1,68 @@
+---
+id: 1-finance
+title: Finance Concepts
+---
+
+### What is finance?
+
+Finance is the exchange of risk through space (beneficial owner) and time. Risk is always conserved.
+
+[https://twitter.com/Melt_Dem/status/1397637244668817408?s=20](https://twitter.com/Melt_Dem/status/1397637244668817408?s=20)
+
+[https://twitter.com/0xdjma/status/1355347537335517185?s=20](https://twitter.com/0xdjma/status/1355347537335517185?s=20)
+
+### Adverse Selection
+
+aka: toxicity, impermanent loss,
+
+related: maker vs taker, passive traders vs aggressors
+
+[https://www.investopedia.com/terms/a/adverseselection.asp](https://www.investopedia.com/terms/a/adverseselection.asp)
+
+[https://www.investopedia.com/terms/a/aggressor.asp](https://www.investopedia.com/terms/a/aggressor.asp)
+
+[https://finematics.com/impermanent-loss-explained/](https://finematics.com/impermanent-loss-explained/)
+
+### Front running
+
+[https://www.investopedia.com/terms/f/frontrunning.asp](https://www.investopedia.com/terms/f/frontrunning.asp)
+
+### Market Impact
+
+aka: slippage, price impact
+
+[https://www.risk.net/definition/market-impact](https://www.risk.net/definition/market-impact)
+
+Do not confuse with "[Impact Investing](https://www.investopedia.com/terms/i/impact-investing.asp)"
+
+### Liquidity Fragmentation
+
+Liquidity fragmentation refers to the fact that market participants do not all agree to meet on one exchange to trade. Different exchanges offer different features and prices, and thus may favor one type of participant over another.
+
+As a trader, you need to consider all available sources of liquidity to get the best price possible. Aggregator services are a good option for those who don't specialize in trade execution. 
+
+![Liquidity fragmentation in US equities markets. Source: [https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0226968](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0226968)](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/558aa051-6697-4be4-8738-45655f149238/Untitled.png)
+
+Liquidity fragmentation in US equities markets. Source: [https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0226968](https://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0226968)
+
+Also see: [National Best Bid and Offer](https://www.investopedia.com/terms/n/nbbo.asp) attempt to guarantee best price for small trades; [Quantitative Brokers](https://quantitativebrokers.com/) is an example sophisticated aggregator service in traditional markets.
+
+We see the same thing happening in DeFi. With the relatively low barrier to entry, exchanges are popping up everywhere and pulling liquidity in every direction. 
+
+### Synthetic vs Physical Assets
+
+We call an original asset "[physical](https://www.investopedia.com/terms/p/physicalasset.asp)" or "real". For example, bitcoin on the bitcoin blockchain, physical gold bullions, USD on the traditional banking system, electronic stock certificates for equity.
+
+Custodial assets are still considered physical. For example, [wBTC](https://wbtc.network/) and [USDC](https://www.coinbase.com/usdc/) only represent claims on bitcoin and USD, but assuming they are fully collateralized, they can easily be exchanged for the physical asset.
+
+**Synthetic assets** are designed to replicate the price of their underlying physical asset, but have no direct way to be redeemed for the underlying. For example, [cash-settled](https://www.investopedia.com/terms/c/cashsettlement.asp) futures will mandate the seller to pay the buyer at expiration time. The methodology to calculate the settlement amount needs to be agreed upon between parties, and that methodology must be designed correctly to prevent gaming.
+
+Despite the design problem of synthetic assets, market participants benefit from them because the physical asset is finite and may be mostly be locked up and made illiquid by a large owner. Existence of synthetic assets allow better price discovery and deeper liquidity.
+
+Trading synthetic assets require putting up collateral in a [margin account](https://www.investopedia.com/terms/m/marginaccount.asp). 
+
+Kyle Samani on how a good collateralization (margins) engine is fundamental to a good derivatives exchange: [https://twitter.com/KyleSamani/status/1415697784993374218?s=20](https://twitter.com/KyleSamani/status/1415697784993374218?s=20)
+
+FTX's margin engine: [https://help.ftx.com/hc/en-us/articles/4404204316052](https://help.ftx.com/hc/en-us/articles/4404204316052)
+
+The downside of synthetic assets is that they aren't directly fungible with the physical asset and therefore lack [composability](https://www.radixdlt.com/post/what-is-defi-composability-and-why-does-it-matter) with other defi protocols.

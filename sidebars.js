@@ -128,6 +128,18 @@ module.exports = {
         "eth2/7-workshop",
       ],
     },
+
+    {
+      type: "category",
+      label: "DeFi",
+      items: [
+        "defi/0-preface",
+        "defi/1-finance",
+        "defi/2-defi-concepts",
+        "defi/3-quests",
+        "defi/4-workshop",
+      ],
+    },
     'ack'
   ],
 };

@@ -82,6 +82,17 @@ const features = [
       </>
     ),
   },
+
+  {
+    title: "DeFi",
+    emoji: "💸",
+    url: "/docs/defi/0-preface",
+    description: (
+      <>
+        Introducing the different facets of finance adopted through a decentralized lens. 
+      </>
+    ),
+  },
 ];
 
 function Feature({ imageUrl, title, description }) {

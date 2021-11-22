@@ -1,0 +1,34 @@
+---
+id: 2-defi-concepts
+title: Defi Concepts
+---
+
+### "Farming"
+
+Yield farming is a financial innovation that kicked off "defi summer 2020" by Compound Labs. 
+
+At a high level, a protocol is rewarding early users by giving them a share of tokens (most often a governance token), for bearing some form of risk. The two most common forms of risks are:
+
+1. Protocol risk — there is a chance that the smart contracts have vulnerabilities. Early users of the contract are taking a higher risk than late users. Also see [Lindy Effect](https://en.wikipedia.org/wiki/Lindy_effect).
+2. Price risk — owning or market making (aka liquidity providing) a new asset is particularly risky. Many protocols will compensate market makers with tokens.
+
+Although user incentives are pretty common in traditional VC funded app launches, DeFi farming is special in that the incentive is equity in the future success of the protocol.
+
+### MEV
+
+MEV was initially an acronym for Miner Extractable Value, but has been rebranded as Maximum Extractable Value.
+
+The canonical MEV example is an atomic arbitrage between two exchanges. Suppose you were able to buy 1 eth for 2500 usd on uniswap and sell 1 eth for 2600 on sushiswap in one transaction. When you submit that transaction to the mempool, another person/bot could see it and submit the same transaction but paying a higher gas to front-run your txn. This gas auction war could go on until the gas value is equivalent to the profit, $100. In this scenario, the miner ends up with the bulk of the value. Therefore, miner extractable value.
+
+More recent thinking found that the miner was not necessarily in the ultimate position of power, and is discussed on Uncommon Core with [@mevintern](https://twitter.com/mevintern): [https://uncommoncore.co/29-interview-with-a-searcher-with-mev-senpai-and-hasu/](https://uncommoncore.co/29-interview-with-a-searcher-with-mev-senpai-and-hasu/)
+
+The three most common types of MEV are arbitrages, loan liquidations, and sandwiching (this last one is considered unethical due to the front-running).
+
+Another example of MEV front-running is the registration of ENS domain names. Suppose you wanted to register `mydomain.eth` for 1 eth / year. A bot watching the mempool could front-run you, and then offer to sell it back to you for a profit. The ENS protocol is aware of this possibility and uses a [commit-and-reveal](https://medium.com/polyswarm/commit-and-reveal-adapting-an-old-scheme-for-new-tricks-e3eafa0b3714) protocol to sell domain names — a buyer hashes their intention to buy a domain so that mempool observers cannot decode the domain name, then in a later block the buyer reveals and purchases the domain. The ENS protocol doesn't allow anybody who hasn't pre-committed to buy that domain. The downside to this pattern is that it requires two transactions and much more gas to achieve the exchange.
+
+This ENS example shows that MEV is not unavoidable. It is possible for protocol designer to make UX tradeoffs to minimize MEV. Therefore MEV is an important aspect to take into account when designing a new protocol.
+
+More readings:
+
+1. Ethereum is a Dark Forest: [https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest/](https://www.paradigm.xyz/2020/08/ethereum-is-a-dark-forest/)
+2. Flashbots Docs [https://docs.flashbots.net/](https://docs.flashbots.net/)

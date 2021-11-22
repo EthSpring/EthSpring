@@ -1,0 +1,59 @@
+---
+id: 3-quests
+title: Quests
+---
+
+<aside>
+💡 Every time you make a new type of transaction, look at the transaction data on Etherscan/Tenderly/EthTx to get a glimpse for how the protocol works.
+</aside>
+
+
+- [ ]  Assuming you only have ETH on the Ethereum chain, buy a small amount ($20 worth) of MATIC (the native token of Polygon/Matic chain). You can do that on many decentralized exchanges: uniswap, sushiswap, paraswap, etc.
+    - [ ]  Do not swap directly using metamask: [https://cryptomode.com/metamask-introduces-built-in-token-swaps-but-charges-an-exuberant-fee/](https://cryptomode.com/metamask-introduces-built-in-token-swaps-but-charges-an-exuberant-fee/)
+- [ ]  Bridge assets to Polygon (prev. Matic); don't forget to buy a small amount of Polygon token (native token on Polygon chain)
+    
+    ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8a3a6882-773b-4183-ac96-41a9f66eb9ad/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8a3a6882-773b-4183-ac96-41a9f66eb9ad/Untitled.png)
+    
+    - [ ]  What happens to your eth-chain assets?
+    - [ ]  How does custody work? What ensures that you can convert polygon-chain assets back to eth-chain?
+- [ ]  Lend and borrow assets from Aave Polygon
+    - [ ]  Be careful don't get liquidated. At what point would your loan get liquidated? What's the penalty?
+    - [ ]  What are you earning on your lending? Who's paying you?
+    - [ ]  What are you paying/earning on your borrowing? If you are earning, who's paying?
+- [ ]  Add some liquidity to a Sushi pair for farming
+    - [ ]  Why are the farming yields higher than on Aave?
+    - [ ]  Why are some pairs' yields higher/lower than others?
+- [ ]  Claim your farmed tokens so far, trade them into your favorite token on Sushi Polygon
+    - [ ]  What's the trading fee?
+    - [ ]  What was your market impact?
+    - [ ]  What was the slippage set to? (See frontrunning MEV)
+        - [ ]  What would happen if you had set it to 10x higher?
+        - [ ]  What would happen if you had set it to zero?
+- [ ]  Now that you have lots of random assets spread around, get an overview of your portfolio on Zapper
+    - [ ]  Try another portfolio overview service: Zerion, DeBank, other?
+- [ ]  Go to 1inch (ethereum chain). 
+Input (don't actually make the trade) a ETH → USDC trade for various amounts of ETH from 0.1 to 10000.
+    - [ ]  How does the amount out (sell price) change as you increase the amount in? Is it linear? Why?
+    - [ ]  How does the routing change as the amount gets larger?
+    - [ ]  Also try it with a stable → stable.
+    - [ ]  Also try paraswap and matcha
+- [ ]  Compare and contrast other defi protocols
+    - [ ]  e.g. MakerDao, Curve, Bancor, Gnosis, Perp, Ruler Protocol (example of a long-tail protocol)
+    - [ ]  Stablecoins — pick one or two and understand how they work
+    - [ ]  Find your own to analyze (please report back and share! good for ⚡ **lightning talk** ⚡)
+- [ ]  Specific discussion: 7/19 Grayscale DeFi Fund: [1](https://www.globenewswire.com/news-release/2021/07/19/2264846/0/en/Grayscale-Investments-and-CoinDesk-Indexes-Launch-Decentralized-Finance-DeFi-Fund-and-Index.html) [2](https://tradeblock.com/markets/dfx/) [twitter](https://twitter.com/search?q=greyscale%20fund&src=typed_query)
+    - [ ]  What's the methodology? Which assets didn't make the cut?
+- [ ]  Specific discussion: Fei Protocol Genesis case study. Read the posts leading up to the protocol launch in April 2021: [https://medium.com/fei-protocol](https://medium.com/fei-protocol)
+    - [ ]  Why was the launch predictably bad? What design flaw was in the genesis design?
+- [ ]  Potential project idea: Build a [dune analytics](https://duneanalytics.com/home) dashboard for a defi protocol
+    
+    
+
+On MEV:
+
+- [ ]  Register an ENS domain
+    - [ ]  How does the protocol prevent front-runners from buying your domain before you do?
+- [ ]  Go find an example transaction(s) on the blockchain illustrating:
+    - [ ]  An pure arbitrage (turns a profit within one transaction)
+    - [ ]  A liquidation event
+    - [ ]  A sandwich (Front running / back running)

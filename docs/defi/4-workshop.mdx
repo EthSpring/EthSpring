@@ -1,0 +1,195 @@
+---
+id: 4-workshop
+title: Workshop and office hour notes
+---
+
+## Links
+
+[https://app.1inch.io/](https://app.1inch.io/)
+
+[https://paraswap.io](https://paraswap.io/)
+
+[https://matcha.xyz/](https://matcha.xyz/)
+
+[https://polygonscan.com/](https://polygonscan.com/)
+
+[https://etherscan.io/](https://etherscan.io/)
+
+[https://blog.makerdao.com/making-maker-march-2020/](https://blog.makerdao.com/making-maker-march-2020/)
+
+### Why lend/borrow?
+
+1. Short eth:
+- Deposit USD in Aave
+- Borrow ETH from Aave
+- Sell the borrowed ETH into USD
+- ??? wait for prices to drop
+- Buy back the ETH at lower price
+- Profit!!
+
+1. Levered long eth:
+- (have usd) Buy ETH ←100% exposure to ETH
+- Deposit ETH in Aave (100$ worth of eth)
+- Borrow USD from Aave (70$ worth of eth)
+- Buy ETH with borrowed USD
+- ??? wait for prices to go up
+- Sell the ETH at higher price
+- Profit!!
+
+1. Yield arbitrage between markets
+
+## Uniswap
+
+Res A amount worth the same as Res b amount worth
+
+e.g. pool containing 1000 USD and 2 ETH ⇒ 1 eth is worth 500 usd
+
+Invariant: amount a * amount b = constant  — (xy = k)
+
+I will deposit 1000 usd, and withdraw x eth. What is x?
+
+2000 USD * 2-x ETH = 2000
+
+x = 1 eth
+
+^ no fee example
+
+---
+
+[https://debank.com](https://debank.com/) example of a third party UI (front-end) that directly interacts with other protocols' smart contracts (backend)
+
+[https://www.nansen.ai/](https://www.nansen.ai/) "Identify opportunities before everyone else"
+
+[https://blog.makerdao.com/making-maker-march-2020/](https://blog.makerdao.com/making-maker-march-2020/) when collateral value drops so quickly, the system becomes undercollateralized
+
+## Week 2 workshop 1: Flash Loans
+
+Definition: A loan that is paid back (sometimes with fee), within the same transaction.
+
+### Use cases
+
+<aside>
+💡 Note that anything that is enabled by a flash loan is also doable by somebody with a large amount of assets.
+
+</aside>
+
+- Reduce transaction complexity: Leveraging / deleveraging a loan, changing a loan's composition (collateral, refinancing, etc)
+
+Deposit 100$ into Aave —> $80 borrow power
+Borrow $80 worth of ETH, and deposit it back into aave —> 
+$100, $80 in eth, and I owe $80 in eth —> $64 borrow power remaining
+    
+    ...
+    
+    Flash loan a large amount of $, deposit it into aave —> 80%  of a large amount borrow power
+    Borrow end amount —> 
+    
+    Aave pool has 50% collat ratio:
+    
+    deposit 1, borrow 0.5, deposit 0.5, borrow 0.25, ... → 2 in collateral, and 1 in borrow
+    
+    Flash loan X, deposit X+1 into aave, borrow 1, withdraw X-1 —> 2 in collateral, 1 in borrow, (end up with X in my wallet) —> Repay flash loan of X.
+    
+- Democratizing arbitrage and liquidations → (MEV)
+
+Market 1: buy 1 ABC for 100000$
+Market 2: sell 1 ABC for 80000$
+
+buy from market 2, sell on market 1 —> $20000 profit (you need $80000)
+
+Stablecoins USDC, USDT, DAI, ...
+
+### Hacks / Protocol Vulnerabilities
+
+[https://coinmarketcap.com/alexandria/article/what-are-flash-loan-attacks](https://coinmarketcap.com/alexandria/article/what-are-flash-loan-attacks)
+
+Naively calculated on-chain prices can be manipulated within a transaction.
+
+djSynths
+
+deposit ETH → djETH
+
+deposit USDC → djUSDC
+
+allow you to swap djETH ↔ djUSDC for a price. That price is uniswap's ETH-USDC pool price.
+
+Uniswap ETH-USDC spot price = amount of ETH / amount of USDC 
+
+E.g. 2 eth, 100 USDC → 1 eth is tradeable for 50 USDC.
+
+I want to buy 1 eth → (2-1) * (100 + X) = 2 * 100 → X = 200 - 100 = 100$ per eth.
+
+Need to pay 100 USDC to buy 1 ETH.
+
+I want to buy 1.5 eth → (2-1.5) * (100 + X) = 2 * 100 → X = 200/0.5 - 100 = 300.
+
+I want to buy 0.0000001 eth → 50$ per eth (spot price)
+
+Flash borrow 300. Buy 1.5 eth from uniswap pool → uniswap pool 0.5 eth, 400 USDC (spot price 800$ / eth)
+
+Swap 100 djETH for 800 * 100 = 80000 djUSDC.
+
+Sell 1.5 eth into uniswap pool, get 300 USDC back → uniswap pool 2 eth, 100 USDC
+
+Pay back my 300$ flash loan
+
+- Price oracle (chainlink)
+- use TWAP prices
+- sprinkle fees around
+
+### Implementation details
+
+Aave Flash Loans [https://docs.aave.com/developers/guides/flash-loans](https://docs.aave.com/developers/guides/flash-loans)
+
+[https://github.com/aave/code-examples-protocol/blob/main/V2/Flash Loan - Batch/MyV2FlashLoan.sol](https://github.com/aave/code-examples-protocol/blob/main/V2/Flash%20Loan%20-%20Batch/MyV2FlashLoan.sol)
+
+File 52 of 79 : LendingPool.sol [https://etherscan.io/address/0xc6845a5c768bf8d7681249f8927877efda425baf#code](https://etherscan.io/address/0xc6845a5c768bf8d7681249f8927877efda425baf#code)
+
+Aave charges 9bps for the flash loan (quite expensive, considering Curve's 3pool charges 3bps for a swap!)
+
+### Exercise: Find an example in the wild through Dune Analytics
+
+## Office Week 2 Hours 1
+
+On the topic of axie infinity:
+
+[https://twitter.com/adamscochran/status/1419667589001850881?s=20](https://twitter.com/adamscochran/status/1419667589001850881?s=20)
+
+[https://duckduckgo.com/?t=ffab&q=mmorpg+economy&ia=web](https://duckduckgo.com/?t=ffab&q=mmorpg+economy&ia=web)
+
+[https://duckduckgo.com/?q=world+of+warcraft+economics&t=ffab&ia=web](https://duckduckgo.com/?q=world+of+warcraft+economics&t=ffab&ia=web)
+
+[https://www.tokenterminal.com/home](https://www.tokenterminal.com/home)
+
+## Week 2 workshop 2: Synthetics
+
+Synthetics are a subset of derivatives. It usually means a "delta one" derivative. I.e. the synthetic asset tracks the underlying asset almost 1-1.
+
+### Why even have synthetic assets?
+
+- Underlying asset is difficult to acquire or trade
+    - Foreign stocks, complicated rules (e.g. dividend tax treatment across countries)
+    - New exchange
+    - Small float
+- Example synthetics in tradfi: ADRs, futures, swaps,
+- Different way of leveraging (more capital efficient)
+- **Stablecoins** are a type of synthetic asset
+
+### How do synthetic assets work?
+
+Perpetual contracts: [https://medium.com/perpetual-protocol/why-use-perpetual-contracts-and-how-do-they-work-57e4a44fb79a](https://medium.com/perpetual-protocol/why-use-perpetual-contracts-and-how-do-they-work-57e4a44fb79a)
+
+Futures: [https://help.ftx.com/hc/en-us/articles/360024780511-Complete-Futures-Specs](https://help.ftx.com/hc/en-us/articles/360024780511-Complete-Futures-Specs)
+
+### Synthetix
+
+[Kwenta](https://kwenta.io/) is the UI to trade between s-assets.
+
+How do trades work?
+
+- What determines trade price?
+- What's the trade fee?
+- What's the market impact?
+- Who is your counterparty?
+
+Twitter thread on doubting yourself when trading: [https://twitter.com/0xdjma/status/1315078514505179137?s=20](https://twitter.com/0xdjma/status/1315078514505179137?s=20)
