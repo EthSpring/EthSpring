@@ -73,7 +73,7 @@ const features = [
 
   {
     title: "Eth2",
-    emoji: "⛓",
+    emoji: "🔗",
     url: "/docs/eth2/0-preface",
     description: (
       <>
