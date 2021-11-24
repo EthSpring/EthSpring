@@ -1,4 +1,8 @@
-# Website
+# Eth Spring
+
+Learn at [ethspring.com](https://ethspring.com)
+
+Contribute here on GitHub!!!
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/), a modern static website generator.
 
