@@ -97,7 +97,7 @@ module.exports = {
         "ethereum-applications/4-games",
         "ethereum-applications/5-finance-and-investing",
         "ethereum-applications/6-attacks",
-        "ethereum-applications/7-more-quests",
+        "ethereum-applications/7-more-than-defi",
       ],
     },
     {

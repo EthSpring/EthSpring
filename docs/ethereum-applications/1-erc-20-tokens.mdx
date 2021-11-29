@@ -1,9 +1,12 @@
 ---
 id: 1-erc-20-tokens
-title: ERC-20 Tokens
+title: Tokens
 ---
 
 ERC-20 Tokens are fungible tokens (as opposed to non fungible tokens). They are ubitious across the Ethereum ecosystem. Common use cases include as money, commodities, financial assets, governance tokens, and revenue share tokens. But really, an ERC20 token can be used for whatever it's design to be used for.
+In workshop 1, we'll cover ERC-20 (how ICO works); decentralized exchange - Uniswap (how to swap ETH for some ERC-20 tokens); and stablecoin (DAI and USDC are all ERC-20 tokens).
+
+This is going to be a brief overview. For an in-depth understanding of these topics, recommend attending the DeFi track.
 
 Here's an ERC20 written in psudo-python, called FreeCoin, designed to be free for anyone mint in unlimited amounts. It's not recommended to use this token as a real currency.
 
@@ -41,15 +44,35 @@ DAI. This is another stable coin similar to USDC. However, each DAI is redeemabl
 
 If you want to get technical, here's the official token standard. This document describes what methods you need to implement for a valid ERC-20 token. [ERC-20 token standard](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md)
 
-## Readings
+### Readings
 
-[ERC-20 token standard](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md)
+[ERC-20 token standard](https://github.com/ethereum/EIPs/issues/20)
+
+[https://github.com/ethereum/EIPs/issues/20](https://github.com/ethereum/EIPs/issues/20) - interesting to read through the original discussion thread
 
 [ERC-20 tutorial on ethereum.org with Web3.py example](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)
 
 [ERC-20 ConsenSys implementation](https://github.com/ConsenSys/Tokens/blob/master/contracts/eip20/EIP20.sol)
 
 [ERC-20 OpenZeppelin implementation](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
+
+Some examples of ERC-20 tokens:
+
+[UNI](https://etherscan.io/token/0x1f9840a85d5af5bf1d1762f925bdaddc4201f984) ([Uniswap](https://uniswap.org/blog/uni/))
+
+[COMP](https://etherscan.io/token/0xc00e94cb662c3520282e6f5717214004a7f26888) ([Compound](https://compound.finance/governance/comp))
+
+[DAI](https://etherscan.io/token/0x6b175474e89094c44da98b954eedeac495271d0f) ([Dai](https://makerdao.com/en/))
+
+[MKR](https://etherscan.io/token/0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2) ([Maker](https://community-development.makerdao.com/en/learn/governance/mkr-token/))
+
+[BAT](https://etherscan.io/token/0x0d8775f648430679a709e98d2b0cb6250d2887ef) ([Basic Attention Token](https://basicattentiontoken.org/))
+
+[WBTC](https://etherscan.io/token/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599) ([Wrapped BTC](https://wbtc.network/))
+
+[USDC](https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48) ([USDCv2: upgrading a multi-billion dollar ERC-20 token](https://blog.coinbase.com/usdc-v2-upgrading-a-multi-billion-dollar-erc-20-token-b57cd9437096))
+
+Filecoin is NOT an ERC20 token, [here](https://coinlist.co/filecoin-2017) is more about the filecoin ICO
 
 [Metamask Tips and Trcks](https://www.youtube.com/watch?v=gKFY_RdOkLA) - Video, tips on advanced gas control and [ledger](https://www.ledger.com/)
 
@@ -62,7 +85,35 @@ For checking current gas price
 
 [Solidity By Example](https://docs.soliditylang.org/en/v0.8.0/solidity-by-example.html) - Use this as a reference to learn solidity
 
-## Quests
+### **Quests**
+
+- [ ]  Interact with smart contracts on [etherscan](https://etherscan.io/)
+    - Get some ERC20 token, e.g. DAI (can swap your ETH for DAI on Uniswap, see the topic below on how);
+    - Go to the ERC20 token smart contract page on etherscan, e.g. [DAI contract page](https://etherscan.io/address/0x6b175474e89094c44da98b954eedeac495271d0f#code);
+    - Go to [Read Contract](https://etherscan.io/address/0x6b175474e89094c44da98b954eedeac495271d0f#readContract), try reading different fields, e.g. put your address as input to check `balanceOf`;
+    - Go to [Write Contract](https://etherscan.io/address/0x6b175474e89094c44da98b954eedeac495271d0f#writeContract), use `transfer` to transfer some token to another address of yours;
+    - Look at the transaction in etherscan;
+    - Go to Read Contract again to verify the `balanceOf` changed for your other address.
+
+## ERC-721
+
+### Readings
+
+[ERC-721 token standard](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md)
+
+[The Anatomy of ERC721](https://medium.com/crypto-currently/the-anatomy-of-erc721-e9db77abfc24)
+
+[ERC-721 tutorial on ethereum.org with Web3.py example](https://ethereum.org/en/developers/docs/standards/tokens/erc-721/)
+
+[0xcert ERC721](https://github.com/0xcert/ethereum-erc721/tree/master/src/contracts/tokens) - a reference implementation
+
+[CryptoKitties ERC-721 implementation](https://github.com/dapperlabs/cryptokitties-bounty/blob/master/contracts/KittyOwnership.sol) (compatible with an earlier version of the standard)
+
+(Optional) [Learn how our last mystery smart contract works](https://www.cryptokitties.co/blog/post/learn-how-our-last-mystery-smart-contract-works/) - CryptoKitties updated their `geneScience` smart contract, see how the contract works, and try to figure out how they updated it
+
+(Related) [ERC-1155 Multi Token Standard](https://eips.ethereum.org/EIPS/eip-1155)
+
+# Quests
 
 - [ ] Interact with smart contracts on [etherscan](https://etherscan.io/)
   - Get some ERC20 token, e.g. DAI (can swap your ETH for DAI on Uniswap, see 01/05 reading list);
