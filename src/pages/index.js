@@ -126,7 +126,8 @@ export default function Home() {
       </header>
       <main>
         <div style={{ width: "80%", margin: "0 auto", padding: "50px" }}>
-          <CallToAction />
+          <CallToAction emoji=":book:" title="Intro to ETH" buttonText="Get Started" to="/docs/introduction/introduction/1-ethereum-101"/>
+          <CallToAction emoji="📹" title="Recorded Talks" buttonText="View" to="/docs/videos/0-sam-richards"/>
           {features && features.length > 0 && (
             <CardContainer style={{ justifyContent: 'center' }}>
               {features.map((props, idx) => (

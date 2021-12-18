@@ -140,6 +140,18 @@ module.exports = {
         "defi/4-workshop",
       ],
     },
+    {
+      type: "category",
+      label: "Videos",
+      items: [
+        "videos/video-directory",
+        "videos/0-sam-richards",
+        "videos/1-paul-frazee",
+        "videos/2-ori-pomerantz",
+        "videos/3-feross",
+        "videos/4-camila-russo",
+      ],
+    },
     'ack'
   ],
 };

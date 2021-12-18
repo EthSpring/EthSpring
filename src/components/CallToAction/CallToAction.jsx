@@ -12,7 +12,7 @@ const CallToActionCard = styled(StyledCard)`
   align-items: center;
 `;
 
-export default function CallToAction() {
+export default function CallToAction({emoji, title, buttonText, to}) {
   return (
       <CallToActionCard>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
@@ -23,15 +23,15 @@ export default function CallToAction() {
               justifyContent: 'center'
             }}
           >
-            <Emoji size={5} text=":book:" />
+            <Emoji size={5} text={emoji} />
           </div>
-          <h2 style={{ textAlign: 'center' }}>Intro to ETH</h2>
+          <h2 style={{ textAlign: 'center' }}>{title}</h2>
           <Link
             className="button button--primary button--lg"
             style={{ textDecoration: 'none' }}
-            to="/docs/introduction/introduction/1-ethereum-101"
+            to={to}
           >
-            Get Started
+            {buttonText}
           </Link>
         </div>
       </CallToActionCard>
