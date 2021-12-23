@@ -150,6 +150,8 @@ module.exports = {
         "videos/2-ori-pomerantz",
         "videos/3-feross",
         "videos/4-camila-russo",
+        "videos/5-yan-zhang",
+        "videos/6-nathan-schnieder",
       ],
     },
     'ack'
