@@ -93,9 +93,9 @@ module.exports = {
       items: [
         "ethereum-applications/0-preface",
         "ethereum-applications/1-erc-20-tokens",
-        "ethereum-applications/3-nfts-collectibles-socks",
-        "ethereum-applications/4-games",
-        "ethereum-applications/5-finance-and-investing",
+        "ethereum-applications/3-nfts",
+        "ethereum-applications/4-dao",
+        "ethereum-applications/5-games",
         "ethereum-applications/6-attacks",
         "ethereum-applications/7-more-than-defi",
       ],

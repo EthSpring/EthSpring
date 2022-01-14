@@ -1,52 +1,19 @@
 ---
 id: 1-erc-20-tokens
-title: Tokens
+title: Tokens, DEX, and Stablecoins
 ---
 
-ERC-20 Tokens are fungible tokens (as opposed to non fungible tokens). They are ubitious across the Ethereum ecosystem. Common use cases include as money, commodities, financial assets, governance tokens, and revenue share tokens. But really, an ERC20 token can be used for whatever it's design to be used for.
+## Workshop 1
+
 In workshop 1, we'll cover ERC-20 (how ICO works); decentralized exchange - Uniswap (how to swap ETH for some ERC-20 tokens); and stablecoin (DAI and USDC are all ERC-20 tokens).
 
 This is going to be a brief overview. For an in-depth understanding of these topics, recommend attending the DeFi track.
 
-Here's an ERC20 written in psudo-python, called FreeCoin, designed to be free for anyone mint in unlimited amounts. It's not recommended to use this token as a real currency.
-
-```python
-class FreeCoin():
-    def init():
-        self.balances = {} # empty dictionary, key will be user, value will be balance
-
-    def transferTo(recipient, amount):
-        # caller is a keyword that represents who called the function
-        if self.balances[caller] > amount:
-            self.balances[caller] -= amount
-            self.balances[recipient] += amount
-
-    def balanceOf(user):
-        return self.balances[user]
-
-    def mint(amount):
-        self.balances[caller] += amount
-```
-
-## Examples of Real-life Tokens
-
-[USDC](https://etherscan.io/token/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48) (US Dollar Coin). Each USDC is minted by Circle (Coinbase and friends). Circle puts a real US dollar a trust, then mints a USDC. A USDC is always redeemable for $1 so it's a useful way of keeping your money in crypto, without experiencing the daily volatility of ETH. ([USDCv2: upgrading a multi-billion dollar ERC-20 token](https://blog.coinbase.com/usdc-v2-upgrading-a-multi-billion-dollar-erc-20-token-b57cd9437096))
-
-DAI. This is another stable coin similar to USDC. However, each DAI is redeemable for $1 worth of ETH. This mechanism allows DAI to always be worth $1 and is interesting to read about. One benefit of DAI over USDC is that with DAI, you don't need to trust Circle's honesty, however the caveat is that with DAI you now need to trust/verify that the smart contracts are written properly. [How it works video](https://www.youtube.com/watch?v=J9q8hkyy8oM) [How it works slides](https://docs.makerdao.com/maker-protocol-101)
-
-[MKR](https://etherscan.io/token/0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2) ([Maker](https://community-development.makerdao.com/en/learn/governance/mkr-token/)). In order for the DAI protocol to keep running smoothly, a governance community called Maker adjusts parameters for the DAI ecosystem. MKR holders vote on how to adjust the DAI protocol to keep the trains running. [Awesome MakerDAO](https://github.com/makerdao/awesome-makerdao/blob/master/README.md)
-
-[WBTC](https://etherscan.io/token/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599) ([Wrapped Bitcoin](https://wbtc.network/)). This token functions similarly to USDC, but instead of being redeemable for $1, it's redeemable for 1 Bitcoin. Since bitcoin isn't an ERC20 built on Ethereum you can't use Bitcoin in the Ethereum ecosystem. WBTC solves this!
-
-[UNI](https://etherscan.io/token/0x1f9840a85d5af5bf1d1762f925bdaddc4201f984). A governance token for [Uniswap](https://uniswap.org/blog/uni/). Owning this token gives you voting rights in how Uniswap spends its multibillion dollar treasury. UNI token holders also can vote to turn on a fee switch which will direct a small portion of Uniswap trading fees to the treasury. [Announcing UNI](https://uniswap.org/blog/uni/)
-
-[MCO2](https://etherscan.io/token/0xfc98e825a2264d890f9a1e68ed50e1526abccacd). The Moss Carbon Credit is a commodity. 1 MCO2 Token = 1 carbon credit from a VCS certified environmental project (forestry, energy, biomass, etc). Practically, buying then burning an MCO2 token is offsetting your carbon emissions by 1 ton. These tokens are all minted by Moss so you're trusting that they've taken care of the legalities. [Read more](https://mco2token.moss.earth)
-
-If you want to get technical, here's the official token standard. This document describes what methods you need to implement for a valid ERC-20 token. [ERC-20 token standard](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md)
+## ERC-20
 
 ### Readings
 
-[ERC-20 token standard](https://github.com/ethereum/EIPs/issues/20)
+[ERC-20 token standard](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md)
 
 [https://github.com/ethereum/EIPs/issues/20](https://github.com/ethereum/EIPs/issues/20) - interesting to read through the original discussion thread
 
@@ -55,6 +22,8 @@ If you want to get technical, here's the official token standard. This document 
 [ERC-20 ConsenSys implementation](https://github.com/ConsenSys/Tokens/blob/master/contracts/eip20/EIP20.sol)
 
 [ERC-20 OpenZeppelin implementation](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol)
+
+Recommend the book [Mastering Ethereum](https://github.com/ethereumbook/ethereumbook) for an overview of Ethereum, there’s a chapter [tokens](https://github.com/ethereumbook/ethereumbook/blob/develop/10tokens.asciidoc) talking about ERC-20 token.
 
 Some examples of ERC-20 tokens:
 
@@ -74,14 +43,16 @@ Some examples of ERC-20 tokens:
 
 Filecoin is NOT an ERC20 token, [here](https://coinlist.co/filecoin-2017) is more about the filecoin ICO
 
+[ERC-20 tokens on Etherscan](https://etherscan.io/tokens)
+
+[Interact with Smart Contracts on Etherscan](https://medium.com/etherscan-blog/interacting-with-smart-contracts-on-etherscan-b3e1d2395ac) - Etherscan blog
+
 [Metamask Tips and Trcks](https://www.youtube.com/watch?v=gKFY_RdOkLA) - Video, tips on advanced gas control and [ledger](https://www.ledger.com/)
 
 For checking current gas price
 
 - [Eth gas station](https://ethgasstation.info/)
 - [Ethereum average gas price chart on etherscan](https://etherscan.io/chart/gasprice)
-
-[Interact with Smart Contracts on Etherscan](https://medium.com/etherscan-blog/interacting-with-smart-contracts-on-etherscan-b3e1d2395ac) - Etherscan blog
 
 [Solidity By Example](https://docs.soliditylang.org/en/v0.8.0/solidity-by-example.html) - Use this as a reference to learn solidity
 
@@ -95,33 +66,55 @@ For checking current gas price
     - Look at the transaction in etherscan;
     - Go to Read Contract again to verify the `balanceOf` changed for your other address.
 
-## ERC-721
+## Decentralized exchange - Uniswap
 
 ### Readings
 
-[ERC-721 token standard](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-721.md)
+[A comparison of Decentralized Exchange Designs](https://thecontrol.co/a-comparison-of-decentralized-exchange-designs-1deef249f56a)
 
-[The Anatomy of ERC721](https://medium.com/crypto-currently/the-anatomy-of-erc721-e9db77abfc24)
+[Constant Function Market Makers: DeFi's "Zero to One" Innovation](https://medium.com/bollinger-investment-group/constant-function-market-makers-defis-zero-to-one-innovation-968f77022159)
 
-[ERC-721 tutorial on ethereum.org with Web3.py example](https://ethereum.org/en/developers/docs/standards/tokens/erc-721/)
+[Uniswap - A Unique Exchange](https://medium.com/scalar-capital/uniswap-a-unique-exchange-f4ef44f807bf) - A good introduction on fundamental ideas behind Uniswap
 
-[0xcert ERC721](https://github.com/0xcert/ethereum-erc721/tree/master/src/contracts/tokens) - a reference implementation
+[Minimum Viable Exchange](https://medium.com/@austin_48503/%EF%B8%8F-minimum-viable-exchange-d84f30bd0c90) and this [gif](https://miro.medium.com/max/700/1*22dvXI1Y5uhMywl1Ez-NOg.gif) - Gave you a good intuition about how the constant product market maker model (x*y = k) works
 
-[CryptoKitties ERC-721 implementation](https://github.com/dapperlabs/cryptokitties-bounty/blob/master/contracts/KittyOwnership.sol) (compatible with an earlier version of the standard)
+[Uniswap Guide with Advanced Tips and Tricks](https://www.youtube.com/watch?v=ovbs8LT8wIg) - Video
 
-(Optional) [Learn how our last mystery smart contract works](https://www.cryptokitties.co/blog/post/learn-how-our-last-mystery-smart-contract-works/) - CryptoKitties updated their `geneScience` smart contract, see how the contract works, and try to figure out how they updated it
+[How to provide liquidity on Uniswap V3](https://help.uniswap.org/en/articles/5391541-provide-liquidity-on-uniswap-v3) - with Screenshots
 
-(Related) [ERC-1155 Multi Token Standard](https://eips.ethereum.org/EIPS/eip-1155)
+[Uniswap V3 - New Era of AMMs? Architecture Explained](https://www.youtube.com/watch?v=Ehm-OYBmlPM) - Video from [Finematics](https://www.youtube.com/c/Finematics/videos) (checkout other Finematics videos too)
 
-# Quests
+[A good deal for liquidity providers?](https://pintail.medium.com/uniswap-a-good-deal-for-liquidity-providers-104c0b6816f2) - Explains impermanent loss
 
-- [ ] Interact with smart contracts on [etherscan](https://etherscan.io/)
-  - Get some ERC20 token, e.g. DAI (can swap your ETH for DAI on Uniswap, see 01/05 reading list);
-  - Go to the ERC20 token smart contract page on etherscan, e.g. [DAI contract page](https://etherscan.io/address/0x6b175474e89094c44da98b954eedeac495271d0f#code);
-  - Go to [Read Contract](https://etherscan.io/address/0x6b175474e89094c44da98b954eedeac495271d0f#readContract), try reading different fields, e.g. put your address as input to check `balanceOf`;
-  - Go to [Write Contract](https://etherscan.io/address/0x6b175474e89094c44da98b954eedeac495271d0f#writeContract), use `transfer` to transfer some token to another address of yours;
-  - Look at the transaction in etherscan;
-  - Go to Read Contract again to verify the `balanceOf` changed for your other address.
-- [ ] Reserve an [ENS](https://ens.domains/) (Ethereum Name Service) name and link it to your Ethereum address.
-- [ ] Mint some [DAI](https://oasis.app/borrow) - There's a "see how it works" video on the website
-- [ ] (Optional) [Coinbase earn](https://www.coinbase.com/earn) - Earning MKR by watching videos
+[Understanding Uniswap Return](https://pintail.medium.com/understanding-uniswap-returns-cc593f3499ef)
+
+[Uniswap docs](https://docs.uniswap.org/protocol/introduction)
+
+[Uniswap smart contracts](https://docs.uniswap.org/protocol/reference/smart-contracts)
+
+### **Quests**
+
+- [ ]  Swap some ETH for another ERC20 token (preferably Stablecoin like DAI) on [Uniswap](https://app.uniswap.org/#/swap)
+- [ ]  Add liquidity to a Uniswap pool
+- [ ]  Remove liquidity from the Uniswap pool
+- [ ]  Ceate your own ERC20 token, and add it to Uniswap
+
+## Stablecoin
+
+### Readings
+
+[Ethereum.org stablecoin tutorial](https://ethereum.org/en/stablecoins/) - Types of stablecoin
+
+[Stablecoins: designing a price-stable cryptocurrency](https://hackernoon.com/stablecoins-designing-a-price-stable-cryptocurrency-6bf24e2689e5)
+
+[How MakerDAO Works](https://www.youtube.com/watch?v=J9q8hkyy8oM) - Video, Coindesk on the DAI "stablecoin" protocol
+
+[What is Maker DAI? Beginner’s guide](https://coincentral.com/maker-dai-beginner-guide/)
+
+[The Market collapse of March 12-13, 2020: How it impacted MakerDAO](https://blog.makerdao.com/the-market-collapse-of-march-12-2020-how-it-impacted-makerdao/)
+
+[Awesome MakerDAO](https://github.com/makerdao/awesome-makerdao/blob/master/README.md) - more resource on DAI and MakerDAO
+
+### **Quests**
+
+- [ ]  Mint some [DAI](https://oasis.app/borrow) - There's a "see how it works" video on the website
