@@ -130,7 +130,6 @@ At this point, messages will start coming in only every 10-30 seconds, and the v
 The directory which Geth uses to store raw blockchain data depends on your operating system. Upon running Geth, look for a message that looks like
 
 ```INFO [11-18|14:04:47] Allocated cache and file handles database=/Users/bgu/Library/Ethereum/testnet/geth/lightchaindata cache=768 handles=128
-
 ```
 
 The path following “database=” should tell you where the blockchain data is stored on your machine. If you’re running a full node, this directory will contain all of the data about every block that has ever been committed to the blockchain. Since we’re running a light node, this directory only contains the block headers.
@@ -147,7 +146,6 @@ To use the Javascript console:
 2. Look for a message that looks like:
 
 ```INFO [11-18|14:04:49] IPC endpoint opened url=/Users/bgu/Library/Ethereum/testnet/geth.ipc
-
 ```
 
 This message should be logged before block synchronization starts.

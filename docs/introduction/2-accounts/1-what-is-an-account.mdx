@@ -12,7 +12,7 @@ In Ethereum, an account is a construct which holds ether and possibly other meta
 - An **address**: a 20-byte unique identifier. Anyone on the network can look up an account and its associated balance/metadata using this identifier.
 - A **balance**: the amount of ether owned by this account. Ether is the cryptocurrency of the Ethereum network.
 
-- Metadata: the number of transactions this account has participated in, and other associated data or code.
+- **Metadata**: the number of transactions this account has participated in, and other associated data or code.
 
 Earlier we mentioned that Ethereum is a computer (the EVM), and that the Ethereum computer’s storage contains a record of all transactions/code that the computer has executed as well as the current state of the computer. The state of the computer at any time includes the data of every account that exists on the Ethereum network at that time, indexed by their addresses: essentially, a big table of all accounts and associated data lives in EVM storage. Therefore, anyone who stores the state of the EVM locally can look up the data (such as the balance) associated with any account address.
 
